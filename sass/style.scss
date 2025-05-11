@@ -1,10 +1,10 @@
 @import "normalize";
-@import 'root';
-@import "main";
+@import "root";
 
-// @import 'buttons';
-// @import 'root';
-// 
-// @import 'main_backup';
-// @import 'post';
-// @import 'pagination';
+@import "partials/header";
+@import "partials/nav";
+@import "partials/footer";
+
+@import "index";
+@import "page";
+@import "section";

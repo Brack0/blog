@@ -15,12 +15,6 @@
 <meta name="twitter:card" content="summary_large_image">
 {%- endblock head_meta -%}
 
-{%- block content_style -%}
-<style>
-	{{ load_data(path="section.css") | safe }}
-</style>
-{%- endblock content_style-%}
-
 {%- block content -%}
 <h1>{{ section.description }}</h1>
 {%- if paginator -%}
@@ -52,12 +46,13 @@
 	<div class="post__content">
 		{{ page.summary | safe }}
 	</div>
-	<a href="{{ page.permalink }}"  class="post__read-more">
+	<a href="{{ page.permalink }}" class="post__read-more">
 		{{ trans(key="post_read_more", lang=lang) }}&nbsp;&#8617;&#xFE0E;
 	</a>
 </article>
 {%- endfor -%}
 {%- if paginator.previous or paginator.next -%}
+<!-- Mutualiser avec la page de post -->
 <nav class="post__pagination">
 	{%- if paginator.previous -%}
 	<a href="{{ paginator.previous }}" class="post__pagination-link">

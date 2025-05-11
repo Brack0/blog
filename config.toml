@@ -20,12 +20,12 @@ smart_punctuation = true
 
 [extra]
 menu_items = [
-    { name = "blog", url = "blog" },
-    { name = "fec", title = "Front-end chronicles", url = "fec" },
-    { name = "about me", url = "about" },
+	{ name = "blog", url = "blog" },
+	{ name = "fec", title = "Front-end chronicles", url = "fec" },
+	{ name = "about me", url = "about" },
 
-    { name = "github", url = "https://github.com/brack0", external = true },
-    { name = "gitlab", url = "https://gitlab.com/Brack0", external = true },
+	{ name = "github", url = "https://github.com/brack0", external = true },
+	{ name = "gitlab", url = "https://gitlab.com/Brack0", external = true },
 ]
 # Some explanation about base_url and site_url
 # base_url will impact most of urls (`permalink`, `current_url`, `get_url(path="/foo")`)

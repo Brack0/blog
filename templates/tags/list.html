@@ -18,18 +18,18 @@
 
 {%- block content -%}
 <div class="content">
-    <div class="post">
-        <h1 class="post-title">{{ trans(key="tag_all_tags", lang=lang) }}</h1>
+	<div class="post">
+		<h1 class="post-title">{{ trans(key="tag_all_tags", lang=lang) }}</h1>
 
-        <ul>
-            {%- for term in terms -%}
-            <li class="tag-list">
-                <a href="{{ term.permalink | safe }}">
-                    {{ term.name }} ({{ term.pages | length }} {{ trans(key="post_post", lang=lang) }}{{ term.pages | length | pluralize }})
-                </a>
-            </li>
-            {%- endfor -%}
-        </ul>
-    </div>
+		<ul>
+			{%- for term in terms -%}
+			<li class="tag-list">
+				<a href="{{ term.permalink | safe }}">
+					{{ term.name }} ({{ term.pages | length }} {{ trans(key="post_post", lang=lang) }}{{ term.pages | length | pluralize }})
+				</a>
+			</li>
+			{%- endfor -%}
+		</ul>
+	</div>
 </div>
 {%- endblock content -%}

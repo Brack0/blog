@@ -13,8 +13,10 @@
 	<title>{%- block title -%}{%- endblock title -%}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
-	<!-- Generate hash script tags with https://report-uri.com/home/hash/ -->
-	<meta name="content-security-policy" content="script-src 'sha256-+zchuzq4uhsaJ4MxWoPD4tD0oGRS362K4Y7KYYQlGZQ=' 'strict-dynamic'; object-src 'none'; base-uri 'none';">
+	<!--Unsafe-inline to fix with css syntax highlighting -->
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self'; frame-src 'self' https://open.spotify.com https://www.youtube.com; connect-src 'none'; base-uri 'self'; form-action 'self';">
+
 	<meta name="color-scheme" content="dark light">
 	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
 	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1D212C">
@@ -39,21 +41,8 @@
 	{%- block head_meta -%}
 	{%- endblock head_meta -%}
 
-	<style>
-		{{ load_data(path="style.css") | safe }}
-	</style>
-	<style>
-		{{ load_data(path="header.css") | safe }}
-	</style>
-	<style>
-		{{ load_data(path="nav.css") | safe }}
-	</style>
-	<style>
-		{{ load_data(path="footer.css") | safe }}
-	</style>
-
-	{%- block content_style -%}
-	{%- endblock content_style-%}
+	<link rel="stylesheet" href='{{ get_url(path="style.css") }}' />
+	<script src='{{ get_url(path="nav.js") }}'></script>
 </head>
 
 <body>
