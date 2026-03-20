@@ -3,7 +3,7 @@
 ![GitHub Actions deploy badge](https://img.shields.io/github/actions/workflow/status/Brack0/blog/deploy.yml?branch=main&logo=github&labelColor=black)
 ![Gitlab status badge](https://img.shields.io/gitlab/pipeline-status/Brack0%2Fvenator?logo=gitlab&labelColor=black)
 ![Vercel deployed badge](https://img.shields.io/badge/Vercel-deployed-blue?logo=vercel&labelColor=black)
-![Zola version badge](https://img.shields.io/badge/Zola-0.18.0-orange?logo=rust&labelColor=black)
+![Zola version badge](https://img.shields.io/badge/Zola-0.22.1-orange?logo=rust&labelColor=black)
 ![MIT License badge](https://img.shields.io/gitlab/license/Brack0%2Fvenator?labelColor=black)
 
 Venator is a static website for a personal blog. It's based on [Zola](https://www.getzola.org/), a static site generator built with Rust. You can find more context in the blog article [Welcome Zola !](content/blog/2024-02-02-welcome-zola.md).
@@ -34,7 +34,7 @@ zola build
 
 A CI/CD pipeline is configured via GitHub Actions in [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml). On every push to the `main` branch, it:
 
-1. Installs Zola `0.18.0`
+1. Installs Zola `0.22.1`
 2. Builds the site with `zola build`
 3. Deploys the generated `public/` directory to the `gh-pages` branch
 
@@ -48,7 +48,7 @@ Also deployed with [Vercel](https://vercel.com/) via Zola preset.
 
 - Node.js version: `20.x` (required for latest Zola versions)
 - Environment Variables:
-  - `ZOLA_VERSION=0.18.0`
+  - `ZOLA_VERSION=0.22.1`
 
 ## Roadmap
 
