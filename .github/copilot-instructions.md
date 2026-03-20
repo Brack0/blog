@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Venator** is a personal blog and podcast site for Denis Souron, built with [Zola](https://www.getzola.org/) (v0.18.0), a Rust-based static site generator. The site is intentionally free of Node.js, npm, and JavaScript build tooling. Zola is the single build binary: it compiles Sass, renders Tera templates, and processes Markdown content into a deployable static site.
+This is a personal blog and podcast site, built with [Zola](https://www.getzola.org/) (v0.18.0), a Rust-based static site generator. The site is intentionally free of Node.js, npm, and JavaScript build tooling. Zola is the single build binary: it compiles Sass, renders Tera templates, and processes Markdown content into a deployable static site.
 
 The site is deployed to GitHub Pages via GitHub Actions and is accessible at `https://brack0.dev/blog`.
 
@@ -156,18 +156,13 @@ generate_feed = true
 - Do not hard-code colour values outside of `color.scss`.
 
 ### Sizing and units
-- **Goal (from TODO)**: Use `rem` consistently for sizing instead of mixing `px` and `rem`. Target values like `0.5rem`, `1rem`, `2rem` over pixel equivalents.
 - Breakpoints are defined in `sass/variables.scss`:
   - `$phone-max-width: 683px`
   - `$tablet-max-width: 899px`
 
 ### Naming
 - Class names follow a BEM-like convention: `.block__element` and `.block__element--modifier`.
-- The TODO tracks a decision between full BEM and a tag-based approach — follow the pattern already present in the file you're editing.
 - Use CSS custom properties (variables) for theming; use Sass variables only for breakpoints and compile-time constants.
-
-### CSS reset
-- A CSS reset is listed in the TODO. When adding one, the reference is [Keith J. Grant's CSS resets](https://keithjgrant.com/posts/2024/01/my-css-resets/).
 
 ---
 
@@ -185,7 +180,6 @@ There is no JavaScript build step, no bundler, and no external JS libraries. Kee
 - `config.extra.site_url = "https://brack0.dev"` — used only when a full absolute production URL is required (canonical links, hreflang).
 - Menu items are defined in `config.extra.menu_items`. External links have `external = true`.
 - Taxonomies: only `tags` is enabled.
-- `build_search_index = false` — Algolia integration is planned (see TODO) but not yet implemented.
 - HTML minification is enabled in production (`minify_html = true`).
 
 ---
@@ -210,9 +204,6 @@ zola check
 ```
 Validates links and configuration without building.
 
-### There are no tests
-The project has no test suite. Correctness is validated by a successful `zola build`.
-
 ---
 
 ## CI/CD
@@ -223,43 +214,6 @@ GitHub Actions (`.github/workflows/deploy.yml`) builds and deploys the site auto
 2. **deploy**: Deploys the artifact to GitHub Pages via `actions/deploy-pages@v4`.
 
 Concurrency is limited to one deployment at a time (newer runs cancel older ones in the same group).
-
----
-
-## Planned Work (from TODO.md)
-
-Use this section to understand intent when contributing. These are active areas of improvement:
-
-### Cosmetic / UI
-- Fix mobile menu link layout bug.
-- Style inline code (backtick spans) to stand out visually.
-- Add background colour to `advice` shortcode boxes.
-
-### Content
-- Translate the "Welcome Zola" post to French.
-- Improve the 404 page.
-- Consider a more advanced landing page (CSS animations, WebGL/WebAssembly — keep browser support in mind).
-- Evaluate Algolia for search (`build_search_index` is already `false` anticipating this).
-- Split `section.html` into separate templates for the blog and the podcast.
-- Fix post navigation arrow direction inconsistency (section list and single post disagree on which direction is "older"/"newer").
-
-### Accessibility (A11Y)
-- Audit and fix remaining accessibility issues.
-
-### Technical debt
-- **HTML**: Remove unnecessary wrapper elements; audit every `| safe` filter use.
-- **CSS**:
-  - Standardise on `rem` for all sizing.
-  - Remove dead rules.
-  - Improve cross-browser compatibility.
-  - Decide and apply BEM or tag-based naming consistently.
-  - Split CSS per page/section to load only what is needed.
-  - Inline critical styles via a macro (`inline_style`).
-  - Add a CSS reset.
-- **Other**:
-  - Rename i18n translation keys to be more consistent.
-  - Replace HTML comments with Tera comments `{# #}` throughout templates.
-  - Run a [Mozilla Observatory](https://observatory.mozilla.org/analyze/brack0.dev) security audit and add a badge to the README.
 
 ---
 
