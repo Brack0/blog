@@ -1,10 +1,10 @@
 # Venator
 
-![Gitlab status badge](https://img.shields.io/gitlab/pipeline-status/Brack0%2Fvenator?logo=gitlab&labelColor=black)
-![Zola version badge](https://img.shields.io/badge/Zola-0.18.0-orange?logo=rust&labelColor=black)
-![MIT License badge](https://img.shields.io/gitlab/license/Brack0%2Fvenator?labelColor=black)
+![GitHub Actions deploy badge](https://img.shields.io/github/actions/workflow/status/Brack0/blog/deploy.yml?branch=main&logo=github&labelColor=black)
+![Zola version badge](https://img.shields.io/badge/Zola-0.22.1-orange?logo=rust&labelColor=black)
+![MIT License badge](https://img.shields.io/github/license/Brack0/blog?labelColor=black)
 
-Venator is a static website for a personal blog. It's based on [Zola](https://www.getzola.org/), a static site generator built with Rust. You can find more context in the blog article [Welcome Zola !](content/blog/2024-02-02-welcome-zola.md).
+Venator is a static website for a personal blog. It's based on [Zola](https://www.getzola.org/), a static site generator built with Rust. You can find more context in the blog article [Welcome Zola !](content/articles/2024-03-15-welcome-zola.md).
 
 ## Getting started
 
@@ -28,13 +28,14 @@ zola build
 
 ## Integration
 
-Deployed with [GitHub Actions](https://github.com/features/actions) and hosted on [GitHub Pages](https://pages.github.com/).
+### GitHub Actions (GitHub Pages)
 
-### Workflow
+A CI/CD pipeline is configured via GitHub Actions in [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml). On every push to the `main` branch, it:
 
-- Trigger: push to `main` branch
-- Build: [getzola/github-pages](https://github.com/getzola/github-pages) action with Zola `v0.18.0`
-- Deploy: [actions/deploy-pages](https://github.com/actions/deploy-pages) action
+1. Builds the site with `getzola/github-pages@v1` (Zola `0.22.1`) and uploads a Pages artifact
+2. Deploys the artifact via `actions/deploy-pages`
+
+Make sure GitHub Pages is configured to use **GitHub Actions** as the source in the repository settings.
 
 ## Roadmap
 

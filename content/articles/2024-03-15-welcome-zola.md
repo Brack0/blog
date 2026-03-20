@@ -15,7 +15,7 @@ I started my blog in early 2022. My requirements was simple: an open source (and
 
 As many developers, I love to program. However, this can lead to appreciate the tools more than the applications built using them. This runs against a pragmatic way of solving things. I wanted to tackle this for my blog. When working on side projects, the journey AND the destination matter as one will learn a lot and get something at the end (kind of, [insert unfinished side project meme here]). But when it comes to blogging, the journey is you writing posts, not you building the best blogging app. That was the main goal when I started my blog.
 
-I chose Docusaurus because I was able to focus on content (blog posts, podcast episodes, etc) instead of the project itself. As an example, I was able to write and deploy in production some blog post with only a GitLab access (thanks to Web IDE). Writing text or markdown and produce HTML/CSS/JS is what I expect from a static-site generator.
+I chose Docusaurus because I was able to focus on content (blog posts, podcast episodes, etc) instead of the project itself. As an example, I was able to write and deploy in production some blog posts with only web IDE access. Writing text or markdown and produce HTML/CSS/JS is what I expect from a static-site generator.
 
 ## About Zola
 
