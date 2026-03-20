@@ -34,11 +34,10 @@ zola build
 
 A CI/CD pipeline is configured via GitHub Actions in [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml). On every push to the `main` branch, it:
 
-1. Installs Zola `0.22.1`
-2. Builds the site with `zola build`
-3. Deploys the generated `public/` directory to the `gh-pages` branch
+1. Builds the site with `getzola/github-pages@v1` (Zola `0.22.1`) and uploads a Pages artifact
+2. Deploys the artifact via `actions/deploy-pages`
 
-Make sure GitHub Pages is configured to serve from the `gh-pages` branch in the repository settings.
+Make sure GitHub Pages is configured to use **GitHub Actions** as the source in the repository settings.
 
 ### Vercel
 
