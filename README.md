@@ -1,7 +1,6 @@
 # Venator
 
 ![GitHub Actions deploy badge](https://img.shields.io/github/actions/workflow/status/Brack0/blog/deploy.yml?branch=main&logo=github&labelColor=black)
-![Vercel deployed badge](https://img.shields.io/badge/Vercel-deployed-blue?logo=vercel&labelColor=black)
 ![Zola version badge](https://img.shields.io/badge/Zola-0.22.1-orange?logo=rust&labelColor=black)
 ![MIT License badge](https://img.shields.io/github/license/Brack0/blog?labelColor=black)
 
@@ -37,16 +36,6 @@ A CI/CD pipeline is configured via GitHub Actions in [`.github/workflows/deploy.
 2. Deploys the artifact via `actions/deploy-pages`
 
 Make sure GitHub Pages is configured to use **GitHub Actions** as the source in the repository settings.
-
-### Vercel
-
-Also deployed with [Vercel](https://vercel.com/) via Zola preset.
-
-#### Custom settings
-
-- Node.js version: `20.x` (required for latest Zola versions)
-- Environment Variables:
-  - `ZOLA_VERSION=0.22.1`
 
 ## Roadmap
 

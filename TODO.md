@@ -43,4 +43,4 @@
 
 - Rename translation keys
 - some doc as code for some features (only Tera comments `{# #}` as HTML comments can go to production)
-- <https://observatory.mozilla.org/analyze/venator.vercel.app> (and add a badge in Readme)
+- <https://observatory.mozilla.org/analyze/brack0.dev> (and add a badge in Readme)
