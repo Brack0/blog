@@ -1,8 +1,9 @@
 # Venator
 
+![GitHub Actions deploy badge](https://img.shields.io/github/actions/workflow/status/Brack0/blog/deploy.yml?branch=main&logo=github&labelColor=black)
 ![Gitlab status badge](https://img.shields.io/gitlab/pipeline-status/Brack0%2Fvenator?logo=gitlab&labelColor=black)
 ![Vercel deployed badge](https://img.shields.io/badge/Vercel-deployed-blue?logo=vercel&labelColor=black)
-![Zola version badge](https://img.shields.io/badge/Zola-0.18.0-orange?logo=rust&labelColor=black)
+![Zola version badge](https://img.shields.io/badge/Zola-0.22.1-orange?logo=rust&labelColor=black)
 ![MIT License badge](https://img.shields.io/gitlab/license/Brack0%2Fvenator?labelColor=black)
 
 Venator is a static website for a personal blog. It's based on [Zola](https://www.getzola.org/), a static site generator built with Rust. You can find more context in the blog article [Welcome Zola !](content/blog/2024-02-02-welcome-zola.md).
@@ -29,13 +30,24 @@ zola build
 
 ## Integration
 
-Deployed with [Vercel](https://vercel.com/) via Zola preset.
+### GitHub Actions (GitHub Pages)
 
-### Custom settings
+A CI/CD pipeline is configured via GitHub Actions in [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml). On every push to the `main` branch, it:
+
+1. Builds the site with `getzola/github-pages@v1` (Zola `0.22.1`) and uploads a Pages artifact
+2. Deploys the artifact via `actions/deploy-pages`
+
+Make sure GitHub Pages is configured to use **GitHub Actions** as the source in the repository settings.
+
+### Vercel
+
+Also deployed with [Vercel](https://vercel.com/) via Zola preset.
+
+#### Custom settings
 
 - Node.js version: `20.x` (required for latest Zola versions)
 - Environment Variables:
-  - `ZOLA_VERSION=0.18.0`
+  - `ZOLA_VERSION=0.22.1`
 
 ## Roadmap
 
