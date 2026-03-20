@@ -1,6 +1,5 @@
 # Venator
 
-![GitHub build badge](https://github.com/Brack0/blog/actions/workflows/build.yml/badge.svg)
 ![Vercel deployed badge](https://img.shields.io/badge/Vercel-deployed-blue?logo=vercel&labelColor=black)
 ![Zola version badge](https://img.shields.io/badge/Zola-0.18.0-orange?logo=rust&labelColor=black)
 ![MIT License badge](https://img.shields.io/github/license/Brack0/blog?labelColor=black)
