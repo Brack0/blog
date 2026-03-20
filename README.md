@@ -1,9 +1,8 @@
 # Venator
 
-![Gitlab status badge](https://img.shields.io/gitlab/pipeline-status/Brack0%2Fvenator?logo=gitlab&labelColor=black)
 ![Vercel deployed badge](https://img.shields.io/badge/Vercel-deployed-blue?logo=vercel&labelColor=black)
 ![Zola version badge](https://img.shields.io/badge/Zola-0.18.0-orange?logo=rust&labelColor=black)
-![MIT License badge](https://img.shields.io/gitlab/license/Brack0%2Fvenator?labelColor=black)
+![MIT License badge](https://img.shields.io/github/license/Brack0/blog?labelColor=black)
 
 Venator is a static website for a personal blog. It's based on [Zola](https://www.getzola.org/), a static site generator built with Rust. You can find more context in the blog article [Welcome Zola !](content/blog/2024-02-02-welcome-zola.md).
 
@@ -38,8 +37,6 @@ Deployed with [Vercel](https://vercel.com/) via Zola preset.
   - `ZOLA_VERSION=0.18.0`
 
 ## Roadmap
-
-**Main goal: Replace previous blog (<https://gitlab.com/Brack0/nebulon>)**
 
 Tasks are available in [TODO.md](./TODO.md).
 

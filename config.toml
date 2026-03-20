@@ -25,7 +25,6 @@ menu_items = [
     { name = "about me", url = "about" },
 
     { name = "github", url = "https://github.com/brack0", external = true },
-    { name = "gitlab", url = "https://gitlab.com/Brack0", external = true },
 ]
 # Some explanation about base_url and site_url
 # base_url will impact most of urls (`permalink`, `current_url`, `get_url(path="/foo")`)
