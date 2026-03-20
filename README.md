@@ -1,5 +1,6 @@
 # Venator
 
+![GitHub build badge](https://github.com/Brack0/blog/actions/workflows/build.yml/badge.svg)
 ![Vercel deployed badge](https://img.shields.io/badge/Vercel-deployed-blue?logo=vercel&labelColor=black)
 ![Zola version badge](https://img.shields.io/badge/Zola-0.18.0-orange?logo=rust&labelColor=black)
 ![MIT License badge](https://img.shields.io/github/license/Brack0/blog?labelColor=black)
@@ -37,6 +38,8 @@ Deployed with [Vercel](https://vercel.com/) via Zola preset.
   - `ZOLA_VERSION=0.18.0`
 
 ## Roadmap
+
+**Main goal: Replace previous blog (<https://gitlab.com/Brack0/nebulon>)**
 
 Tasks are available in [TODO.md](./TODO.md).
 
