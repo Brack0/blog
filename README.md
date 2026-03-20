@@ -28,7 +28,13 @@ zola build
 
 ## Integration
 
-No specific deployment configuration needed.
+Deployed with [GitHub Actions](https://github.com/features/actions) and hosted on [GitHub Pages](https://pages.github.com/).
+
+### Workflow
+
+- Trigger: push to `main` branch
+- Build: [getzola/github-pages](https://github.com/getzola/github-pages) action with Zola `v0.18.0`
+- Deploy: [actions/deploy-pages](https://github.com/actions/deploy-pages) action
 
 ## Roadmap
 

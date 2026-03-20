@@ -44,6 +44,7 @@ toggle_theme = "Toggle theme (dark/light)"
 
 footer_powered_by = "Powered by"
 footer_theme_by = "Theme inspired by"
+footer_hosted_on = "Hosted on"
 
 hero_title = "Venator"
 hero_tagline = "The Backbone of Web Development against Confederacy of Node_modules"
@@ -74,6 +75,7 @@ toggle_theme = "Changement de thème (sombre/clair)"
 
 footer_powered_by = "Propulsé par"
 footer_theme_by = "Thème inspiré de"
+footer_hosted_on = "Hébergement"
 
 hero_title = "Venator"
 hero_tagline = "Les Fondations du Développement Web contre la Confédération des Node_modules"
