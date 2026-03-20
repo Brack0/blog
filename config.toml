@@ -20,7 +20,7 @@ smart_punctuation = true
 
 [extra]
 menu_items = [
-    { name = "blog", url = "blog" },
+    { name = "articles", url = "articles" },
     { name = "fec", title = "Front-end chronicles", url = "fec" },
     { name = "about me", url = "about" },
 
