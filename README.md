@@ -5,7 +5,7 @@
 ![Zola version badge](https://img.shields.io/badge/Zola-0.22.1-orange?logo=rust&labelColor=black)
 ![MIT License badge](https://img.shields.io/github/license/Brack0/blog?labelColor=black)
 
-Venator is a static website for a personal blog. It's based on [Zola](https://www.getzola.org/), a static site generator built with Rust. You can find more context in the blog article [Welcome Zola !](content/blog/2024-02-02-welcome-zola.md).
+Venator is a static website for a personal blog. It's based on [Zola](https://www.getzola.org/), a static site generator built with Rust. You can find more context in the blog article [Welcome Zola !](content/articles/2024-03-15-welcome-zola.md).
 
 ## Getting started
 
