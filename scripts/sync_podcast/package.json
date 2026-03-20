@@ -1,0 +1,14 @@
+{
+  "name": "sync-podcast",
+  "version": "1.0.0",
+  "description": "Sync podcast episodes from RSS feed to markdown files.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node sync.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.5.8"
+  }
+}
