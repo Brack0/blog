@@ -1,7 +1,6 @@
 # Venator
 
 ![Gitlab status badge](https://img.shields.io/gitlab/pipeline-status/Brack0%2Fvenator?logo=gitlab&labelColor=black)
-![Vercel deployed badge](https://img.shields.io/badge/Vercel-deployed-blue?logo=vercel&labelColor=black)
 ![Zola version badge](https://img.shields.io/badge/Zola-0.18.0-orange?logo=rust&labelColor=black)
 ![MIT License badge](https://img.shields.io/gitlab/license/Brack0%2Fvenator?labelColor=black)
 
@@ -29,13 +28,7 @@ zola build
 
 ## Integration
 
-Deployed with [Vercel](https://vercel.com/) via Zola preset.
-
-### Custom settings
-
-- Node.js version: `20.x` (required for latest Zola versions)
-- Environment Variables:
-  - `ZOLA_VERSION=0.18.0`
+No specific deployment configuration needed.
 
 ## Roadmap
 
