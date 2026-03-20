@@ -226,3 +226,24 @@ Concurrency is limited to one deployment at a time (newer runs cancel older ones
 5. **Accessibility first.** Ensure colour contrast, keyboard navigation, and ARIA attributes are correct.
 6. **Template comments only.** Use `{# #}` in Tera templates, never `<!-- -->`.
 7. **Respect the existing style.** Match naming, formatting, and architecture patterns already in use in each file before introducing new ones.
+
+---
+
+## Git Guidelines
+
+### Branching (Trunk-Based Development)
+- `main` must always be deployable; branches must be short-lived (< 2 days).
+- Branch name format: `<type>/<short-description>` in kebab-case (e.g. `feat/rss-feed`, `fix/mobile-menu`).
+- Common types: `feat`, `fix`, `chore`, `docs`, `refactor`.
+
+### Conventional Commits
+Format: `<type>(scope): <description>`
+
+- `feat(articles): add pagination`
+- `fix(header): correct mobile menu layout`
+- `chore: update Zola to 0.22.1`
+
+### History & Merging
+- Prefer `rebase` over merge to keep a linear history.
+- Make atomic commits — one logical change per commit.
+- Rebase on the latest `main` and clean up commits before opening a pull request.
