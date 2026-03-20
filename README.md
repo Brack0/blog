@@ -1,5 +1,6 @@
 # Venator
 
+![GitHub Actions deploy badge](https://img.shields.io/github/actions/workflow/status/Brack0/blog/deploy.yml?branch=main&logo=github&labelColor=black)
 ![Gitlab status badge](https://img.shields.io/gitlab/pipeline-status/Brack0%2Fvenator?logo=gitlab&labelColor=black)
 ![Vercel deployed badge](https://img.shields.io/badge/Vercel-deployed-blue?logo=vercel&labelColor=black)
 ![Zola version badge](https://img.shields.io/badge/Zola-0.18.0-orange?logo=rust&labelColor=black)
@@ -29,9 +30,21 @@ zola build
 
 ## Integration
 
-Deployed with [Vercel](https://vercel.com/) via Zola preset.
+### GitHub Actions (GitHub Pages)
 
-### Custom settings
+A CI/CD pipeline is configured via GitHub Actions in [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml). On every push to the `main` branch, it:
+
+1. Installs Zola `0.18.0`
+2. Builds the site with `zola build`
+3. Deploys the generated `public/` directory to the `gh-pages` branch
+
+Make sure GitHub Pages is configured to serve from the `gh-pages` branch in the repository settings.
+
+### Vercel
+
+Also deployed with [Vercel](https://vercel.com/) via Zola preset.
+
+#### Custom settings
 
 - Node.js version: `20.x` (required for latest Zola versions)
 - Environment Variables:
