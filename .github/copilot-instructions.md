@@ -40,7 +40,7 @@ The site is deployed to GitHub Pages via GitHub Actions and is accessible at `ht
 │   └── fec/                    # Front-end Chronicles podcast episodes
 │       ├── _index.md
 │       ├── _index.fr.md
-│       └── fec-N.md            # Individual episodes (+ .fr.md)
+│       └── YYYY-MM-DD-fec-N.md # Individual episodes (+ .fr.md)
 ├── highlight_themes/
 │   └── venator.tmTheme         # Custom syntax highlighting theme (TextMate format)
 ├── sass/                       # SCSS source files
@@ -85,7 +85,7 @@ The site is deployed to GitHub Pages via GitHub Actions and is accessible at `ht
 ### File naming
 - Blog posts: `content/articles/YYYY-MM-DD-slug.md` (English) and `content/articles/YYYY-MM-DD-slug.fr.md` (French)
 - Posts with assets (images, etc.): use a folder `content/articles/YYYY-MM-DD-slug/index.md` + `index.fr.md`
-- Podcast episodes: `content/fec/fec-N.md` and `content/fec/fec-N.fr.md`
+- Podcast episodes: `content/fec/YYYY-MM-DD-fec-N.md` and `content/fec/YYYY-MM-DD-fec-N.fr.md`
 
 ### Front matter (TOML)
 Every content file starts with a TOML front matter block:
@@ -93,16 +93,14 @@ Every content file starts with a TOML front matter block:
 ```toml
 +++
 title = "Post title"
-date = 2024-03-15
-description = "A short description for SEO and previews."
 
 [taxonomies]
 tags = ["tag-one", "tag-two"]
 +++
 ```
 
-- `title` and `date` are required.
-- `description` is used for previews and OpenGraph tags.
+- `title` is required. `date` is inferred from the filename prefix (`YYYY-MM-DD-`).
+- `description` is optional — templates fall back to the first paragraph when absent.
 - `summary` can be used to control the excerpt shown in list pages.
 - Tags use kebab-case slugs.
 
@@ -136,7 +134,7 @@ generate_feed = true
 - Use `| safe` only when the value is known to be safe HTML. Audit usages carefully; the TODO notes many are missing or unnecessary.
 - Access i18n via `{{ trans(key="...", lang=lang) }}`. The `lang` variable is automatically provided by Zola.
 - Macros are imported at the top of the file: `{%- import "macros/header.html" as header -%}` and called with `{{ header::content(...) }}`.
-- Shortcodes live in `templates/shortcodes/` and are called from Markdown: `{{ advice(type="info", name="Title") }}content{{ end }}`.
+- Shortcodes live in `templates/shortcodes/` and are called from Markdown: `{% advice(type="info", name="Title") %}content{% end %}`.
 - URLs in templates use `get_url(path="...")` to respect the configured `base_url`. When a full production URL is needed (canonical, alternate hreflang), prefix with `config.extra.site_url`.
 
 ---
@@ -144,7 +142,8 @@ generate_feed = true
 ## Styling Conventions (SCSS)
 
 ### Architecture
-- `sass/style.scss` is the entry point and imports all other modules in order.
+- `sass/style.scss` is the main entry point and imports all shared SCSS modules in order.
+- `sass/header.scss` is compiled separately to `header.css` and inlined by the header template via `load_data(path="header.css")`; do **not** import it into `style.scss`.
 - Never add new styles directly to `style.scss`; create or extend a module file.
 
 ### Theming
@@ -153,7 +152,7 @@ generate_feed = true
 - Themes are applied via:
   - `@media (prefers-color-scheme: dark/light)` for system preference.
   - `.dark` / `.light` class on `:root` for user override (toggled via JavaScript and persisted to `localStorage`).
-- Do not hard-code colour values outside of `color.scss`.
+- New or refactored styles should use these CSS custom properties instead of hard-coding colour values; legacy files that still use hard-coded colours can be gradually migrated toward `color.scss` variables.
 
 ### Sizing and units
 - Breakpoints are defined in `sass/variables.scss`:
@@ -188,9 +187,9 @@ There is no JavaScript build step, no bundler, and no external JS libraries. Kee
 
 ### Running locally
 ```sh
-zola serve
+zola serve -u /
 ```
-This starts a dev server at `http://127.0.0.1:1111/blog` with hot reload.
+This starts a dev server at `http://127.0.0.1:1111/` with hot reload (overrides the `/blog` base_url for local development).
 
 ### Building
 ```sh
@@ -241,7 +240,7 @@ Format: `<type>(scope): <description>`
 
 - `feat(articles): add pagination`
 - `fix(header): correct mobile menu layout`
-- `chore: update Zola to 0.22.1`
+- `chore: update Zola to vX.Y.Z`
 
 ### History & Merging
 - Prefer `rebase` over merge to keep a linear history.
