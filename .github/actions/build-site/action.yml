@@ -21,7 +21,18 @@ runs:
         ZOLA_VERSION: ${{ inputs.zola-version }}
       run: |
         set -euo pipefail
-        curl -sL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | tar xz
+        TARBALL="zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+        BASE_URL="https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}"
+
+        # Download Zola tarball and its SHA-256 checksum file
+        curl -sL "${BASE_URL}/${TARBALL}" -o "${TARBALL}"
+        curl -sL "${BASE_URL}/${TARBALL}.sha256" -o "${TARBALL}.sha256"
+
+        # Verify the integrity of the downloaded tarball
+        sha256sum -c "${TARBALL}.sha256"
+
+        # Extract and install Zola only if checksum verification succeeded
+        tar xzf "${TARBALL}"
         sudo install -m 0755 zola /usr/local/bin/zola
 
     - name: Build site
