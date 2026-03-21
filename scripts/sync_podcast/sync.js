@@ -120,7 +120,7 @@ export function buildEnMarkdown(ep) {
   const tags = DEFAULT_TAGS.map((t) => `"${t}"`).join(", ");
   const lines = [
     `+++`,
-    `title = "${ep.title}"`,
+    `title = "${escapeTOMLString(ep.title)}"`,
     `authors = ${AUTHORS}`,
     ``,
     `[taxonomies]`,
@@ -149,7 +149,7 @@ export function buildFrMarkdown(ep) {
   const tags = DEFAULT_TAGS.map((t) => `"${t}"`).join(", ");
   const lines = [
     `+++`,
-    `title = "${ep.title}"`,
+    `title = "${escapeTOMLString(ep.title)}"`,
     `authors = ${AUTHORS}`,
     ``,
     `[taxonomies]`,
@@ -287,6 +287,17 @@ function unescapeHTML(s) {
     .replace(/&#39;/g, "'")
     .replace(/&apos;/g, "'")
     .replace(/&amp;/g, "&");
+}
+
+// Escape a string for use inside a TOML basic string (double-quoted).
+// Handles backslash, double quote, and common control characters.
+function escapeTOMLString(s) {
+  return s
+    .replace(/\\/g, "\\\\")
+    .replace(/"/g, '\\"')
+    .replace(/\n/g, "\\n")
+    .replace(/\r/g, "\\r")
+    .replace(/\t/g, "\\t");
 }
 
 function formatDate(d) {

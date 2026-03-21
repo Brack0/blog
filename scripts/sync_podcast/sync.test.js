@@ -8,7 +8,7 @@
 
 import { test, describe, before, after, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
-import { mkdtemp, readdir, readFile, cp, rm, stat } from "node:fs/promises";
+import { mkdtemp, readdir, readFile, cp, rm } from "node:fs/promises";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
