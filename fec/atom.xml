@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Venator - Front-End Chronicles</title>
+    <link rel="self" type="application/atom+xml" href="/blog/fec/atom.xml"/>
+    <link rel="alternate" type="text/html" href="/blog/fec/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-09-14T00:00:00+00:00</updated>
+    <id>/blog/fec/atom.xml</id>
+    <entry xml:lang="en">
+        <title>#18 - From JSLint to ESLint: The Evolution of Major JavaScript Linters</title>
+        <published>2023-09-14T00:00:00+00:00</published>
+        <updated>2023-09-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-18/"/>
+        <id>/blog/fec/fec-18/</id>
+        
+        <summary type="html">&lt;p&gt;In this back-to-school episode, we revisit the history of ESLint.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#17 - Compilation, Linters and Guidelines</title>
+        <published>2023-07-13T00:00:00+00:00</published>
+        <updated>2023-07-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-17/"/>
+        <id>/blog/fec/fec-17/</id>
+        
+        <summary type="html">&lt;p&gt;In this summer episode, we wanted to step away from the web for a moment and initiate a discussion about compilation and the origins of linters.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#16 - No Signals</title>
+        <published>2023-05-01T00:00:00+00:00</published>
+        <updated>2023-05-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-16/"/>
+        <id>/blog/fec/fec-16/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about signals and a bit more about Angular!&lt;&#x2F;p&gt;
+&lt;p&gt;We start from the basics of what a signal is and delve into its implementations in various frameworks.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#15 - Angular v13 to v15.1</title>
+        <published>2023-02-22T00:00:00+00:00</published>
+        <updated>2023-02-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-15/"/>
+        <id>/blog/fec/fec-15/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about Angular features from 13 to 15.1.&lt;&#x2F;p&gt;
+&lt;p&gt;If you thought about migrating but missed new features, this episode is for you!&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#14 - From Webpack to Turbopack</title>
+        <published>2022-12-28T00:00:00+00:00</published>
+        <updated>2022-12-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-14/"/>
+        <id>/blog/fec/fec-14/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about the arrival of Turbopack.&lt;&#x2F;p&gt;
+&lt;p&gt;But where did we come from?
+We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#13 - How is my package resolved with my package manager ? 🔎📦💪</title>
+        <published>2022-10-19T00:00:00+00:00</published>
+        <updated>2022-10-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-13/"/>
+        <id>/blog/fec/fec-13/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about NPM, PNPM, Yarn and how they resolve dependencies.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#12 - Focus on content 🦖</title>
+        <published>2022-08-29T00:00:00+00:00</published>
+        <updated>2022-08-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-12/"/>
+        <id>/blog/fec/fec-12/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about Docusaurus and what this tool can do for us.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#11 - Discovery : Qwik, to the moon !</title>
+        <published>2022-06-01T00:00:00+00:00</published>
+        <updated>2022-06-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-11/"/>
+        <id>/blog/fec/fec-11/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about Qwik and what this new framework can bring us!&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#10 - What is a front-end developer in 2022  ?</title>
+        <published>2022-04-12T00:00:00+00:00</published>
+        <updated>2022-04-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Tristan Nicoleau
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Gaël Dupont
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-10/"/>
+        <id>/blog/fec/fec-10/</id>
+        
+        <summary type="html">&lt;p&gt;Anniversary episode!&lt;&#x2F;p&gt;
+&lt;p&gt;In the “talk and chill” format, we receive two guests also front-end developer to discuss around the theme “What is a front-end developer in 2022 ?”.&lt;&#x2F;p&gt;
+&lt;p&gt;Episode a little longer than usual, we discuss dev, front-end in general, frameworks, IDEs…&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#9 - CSS in 2022</title>
+        <published>2022-02-08T00:00:00+00:00</published>
+        <updated>2022-02-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-9/"/>
+        <id>/blog/fec/fec-9/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about CSS and some features for 2022 !&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#8 - Discovery : On the way to Nuxt 3</title>
+        <published>2021-12-31T00:00:00+00:00</published>
+        <updated>2021-12-31T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-8/"/>
+        <id>/blog/fec/fec-8/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about NuxtJS and what Nuxt 3 will bring!&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#7 - Devfest Nantes 2021</title>
+        <published>2021-11-04T00:00:00+00:00</published>
+        <updated>2021-11-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-7/"/>
+        <id>/blog/fec/fec-7/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about the Devfest Nantes 2021.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#6 - C&#x27;est quoi HTML5 ?</title>
+        <published>2021-09-23T00:00:00+00:00</published>
+        <updated>2021-09-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-6/"/>
+        <id>/blog/fec/fec-6/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about… HTML5!&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#5 - Discovery : JAMstack</title>
+        <published>2021-07-22T00:00:00+00:00</published>
+        <updated>2021-07-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-5/"/>
+        <id>/blog/fec/fec-5/</id>
+        
+        <summary type="html">&lt;p&gt;In this new episode in Discovery format, we talk about JAMstack!&lt;&#x2F;p&gt;
+&lt;p&gt;As a reminder, in this type of format, we make you discover a subject together by skimming over the important points&#x2F;subjects&#x2F;concepts.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#4 - Angular 12</title>
+        <published>2021-06-03T00:00:00+00:00</published>
+        <updated>2021-06-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-4/"/>
+        <id>/blog/fec/fec-4/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about what we think of the new version of Angular (v12) !&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#3 - Discovery : Vue.js !</title>
+        <published>2021-04-28T00:00:00+00:00</published>
+        <updated>2021-04-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-3/"/>
+        <id>/blog/fec/fec-3/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we present a new format: Discovery ! We make you discover a subject together by flying over the important points&#x2F;subjects&#x2F;concepts.&lt;&#x2F;p&gt;
+&lt;p&gt;Today, we are talking about Vue.js!&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#2 - Do we really need TypeScript in 2021 ?</title>
+        <published>2021-03-16T00:00:00+00:00</published>
+        <updated>2021-03-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-2/"/>
+        <id>/blog/fec/fec-2/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about what we think of TypeScript and its potential usefulness in modern projects.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>#1 - What&#x27;s new since Angular 5 ?</title>
+        <published>2021-02-16T00:00:00+00:00</published>
+        <updated>2021-02-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fec/fec-1/"/>
+        <id>/blog/fec/fec-1/</id>
+        
+        <summary type="html">&lt;p&gt;In this episode, we talk about what we learned from the releases of Angular 5 to Angular 11 and what we think about it.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>

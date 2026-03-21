@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr">
+    <title>Venator - Blog</title>
+    <link rel="self" type="application/atom+xml" href="/blog/fr/articles/atom.xml"/>
+    <link rel="alternate" type="text/html" href="/blog/fr/articles/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-12-25T00:00:00+00:00</updated>
+    <id>/blog/fr/articles/atom.xml</id>
+    <entry xml:lang="fr">
+        <title>Advent of TypeScript 2023</title>
+        <published>2023-12-25T00:00:00+00:00</published>
+        <updated>2023-12-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/advent-of-typescript-2023/"/>
+        <id>/blog/fr/articles/advent-of-typescript-2023/</id>
+        
+        <summary type="html">&lt;p&gt;Au lieu de participer au populaire Advent of Code, cette année j’ai décidé de relever le défi de l’&lt;a rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;typehero.dev&#x2F;aot-2023&quot;&gt;Advent of TypeScript&lt;&#x2F;a&gt;. Dans cet article, vous trouverez mes solutions ainsi que quelques détails sur leur fonctionnement ou ce que j’ai appris en résolvant les défis.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Les conférences du Devfest Nantes 2022 que j&#x27;ai retenu</title>
+        <published>2023-02-04T00:00:00+00:00</published>
+        <updated>2023-02-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/devfest-nantes-2022-conferences/"/>
+        <id>/blog/fr/articles/devfest-nantes-2022-conferences/</id>
+        
+        <summary type="html">&lt;p&gt;Je vous propose une liste des conférences qui m’ont particulièrement plues pendant l’événement. Vous avez surement vos sujets préférés mais la plupart des vidéos valent le détour pour les développeurs frontend.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>La notion d&#x27;Injector en Angular</title>
+        <published>2022-10-17T00:00:00+00:00</published>
+        <updated>2022-10-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/angular-injector/"/>
+        <id>/blog/fr/articles/angular-injector/</id>
+        
+        <summary type="html">&lt;p&gt;Un &lt;code&gt;Injector&lt;&#x2F;code&gt; est une mécanique dédiée à l’injection de dépendances en Angular. Les différents frameworks n’ont pas tous la même approche pour la DI. Par exemple, le fameux framework Java utilise le Spring IoC Container. La documentation d’Angular a longtemps mis en avant les &lt;code&gt;providers&lt;&#x2F;code&gt;, tout en négligeant d’autres éléments importants pour la DI. Les &lt;code&gt;Injector&lt;&#x2F;code&gt; ne font pas exception à cette règle. C’est pourquoi je vous propose de découvrir ensemble comment ils fonctionnent.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Comment gérer sa compatibilité CSS ?</title>
+        <published>2022-08-24T00:00:00+00:00</published>
+        <updated>2022-08-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/css-compatibility/"/>
+        <id>/blog/fr/articles/css-compatibility/</id>
+        
+        <summary type="html">&lt;p&gt;Avec l’omniprésence de Babel et Typescript dans l’univers Frontend, la compatibilité Javascript de nos applications n’est (presque) plus un sujet. Pour le HTML, seulement quelques attributs sont ajoutés depuis le HTML5 pour des fonctionnalités &lt;em&gt;bonus&lt;&#x2F;em&gt; (lazyload, prefetch, etc.). Ils sont en général ignorés par les navigateurs incompatibles. Et pour le CSS ? Pas de polyfills à proprement parler, un support très hétérogène et la moindre esquive d’un &lt;code&gt;display:grid&lt;&#x2F;code&gt; est désastreux pour le visuel. Alors comment fait-on pour rationaliser notre CSS ? Voyons ça ensemble.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Goodbye Redux</title>
+        <published>2022-08-23T00:00:00+00:00</published>
+        <updated>2022-08-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/state-management-goodbye-redux/"/>
+        <id>/blog/fr/articles/state-management-goodbye-redux/</id>
+        
+        <summary type="html">&lt;p&gt;Parlons de State Management au niveau d’une application. Les états locaux (React Hook, Vue Composable, Service Angular + RxJS Subject) ont un usage limité par définition. Avec l’ampleur de l’écosystème React sur le monde professionnel, Redux est devenu la réponse évidente à la problématique du State Management. Etudions ensemble le processus assez naturel qui nous amène à Redux et prenons du recul sur nos choix.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Optional chaining : meilleur ami ou pire ennemi ?</title>
+        <published>2022-07-27T00:00:00+00:00</published>
+        <updated>2022-07-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/js-optional-chaining/"/>
+        <id>/blog/fr/articles/js-optional-chaining/</id>
+        
+        <summary type="html">&lt;p&gt;Intégré à ES2020, présent depuis 2018 dans Babel et depuis la version 3.7 de Typescript, l’optional chaining est un opérateur largement utilisé aujourd’hui. Même si l’intérêt d’un tel opérateur est indéniable, regardons ensemble les biais et les mauvaises pratiques qui peuvent émerger de son usage.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Qu&#x27;est qu&#x27;on pourrait améliorer sur Angular ?</title>
+        <published>2022-06-22T00:00:00+00:00</published>
+        <updated>2022-06-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/angular-enhance/"/>
+        <id>/blog/fr/articles/angular-enhance/</id>
+        
+        <summary type="html">&lt;p&gt;Je vous propose quelques fonctionnalités qui pourraient améliorer la Developer eXperience et le framework dans sa globalité.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Exploiter les Discriminated Union en Typescript</title>
+        <published>2022-05-07T00:00:00+00:00</published>
+        <updated>2022-05-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/ts-discriminated-union/"/>
+        <id>/blog/fr/articles/ts-discriminated-union/</id>
+        
+        <summary type="html">&lt;h2 id=&quot;de-quoi-parle-t-on&quot;&gt;De quoi parle-t-on ?&lt;&#x2F;h2&gt;
+&lt;p&gt;En Typescript, il est possible de définir des types de plusieurs manières : interface, classe, enum, mot-clé &lt;code&gt;type&lt;&#x2F;code&gt;, &lt;code&gt;as const&lt;&#x2F;code&gt;, etc. Dans cet article, nous allons nous concentrer sur les types construits à partir d’une union disjointe et les avantages d’une telle pratique. L’union en Typescript se fait via le symbole &lt;code&gt;|&lt;&#x2F;code&gt; (ex : &lt;code&gt;type Union = A | B | C&lt;&#x2F;code&gt;). Le terme disjoint n’est pas anodin car contrairement au polymorphisme, les types que l’on va utiliser peuvent ne rien avoir en commun.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Du pattern matching en JS ?</title>
+        <published>2022-05-06T00:00:00+00:00</published>
+        <updated>2022-05-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/js-pattern-matching/"/>
+        <id>/blog/fr/articles/js-pattern-matching/</id>
+        
+        <summary type="html">&lt;p&gt;Non malheureusement ce n’est pas (encore) possible en Javascript, ni en Typescript. Mais on peut essayer de s’en rapprocher, notamment en séparant l’identification d’un scénario de son exécution. L’objectif est de renforcer la lisibilité et rapprocher le code du problème à résoudre. Pour illustrer le propos, nous utiliserons le traitement d’un article de blog (ajout, suppression, publication, etc.) à partir des informations contenues dans cet article. De plus, je vous propose d’y aller étape par étape afin que vous puissiez appliquer ce refactoring dans votre code.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Deep dive Angular : Performance des templates</title>
+        <published>2021-10-14T00:00:00+00:00</published>
+        <updated>2021-10-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/angular-template-performance/"/>
+        <id>/blog/fr/articles/angular-template-performance/</id>
+        
+        <summary type="html">&lt;p&gt;La performance est un sujet récurrent quand on parle de frontend. Les principaux acteurs (librairies&#x2F;frameworks Javascript) y font tous référence dès la page d’accueil. Angular est connu pour intégrer un bundle plus complet mais plus lourd que ses concurrents directs. Même si ces différentes technologies n’embarquent pas les mêmes fonctionnalités, il reste une problématique à résoudre pour tous : le rendu HTML. Nous allons analyser ensemble le fonctionnement d’Angular dans trois cas précis : la gestion des blocs statiques, la mise à jour du DOM et la mise en cache de valeurs.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;blog&#x2F;fr&#x2F;articles&#x2F;angular-template-performance&#x2F;cover.webp&quot; alt=&quot;Cover&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="fr">
+        <title>Enter the Vue.js</title>
+        <published>2021-07-27T00:00:00+00:00</published>
+        <updated>2021-07-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Denis Souron
+          </name>
+        </author>
+        
+        <author>
+          <name>
+            Benjamin Auzanneau
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/fr/articles/enter-the-vuejs/"/>
+        <id>/blog/fr/articles/enter-the-vuejs/</id>
+        
+        <summary type="html">&lt;p&gt;Dans le monde du développement frontend, React et Angular sont les frameworks qui dominent le marché. Cependant, Vue.js est clairement un challenger à ne pas prendre à la légère.&lt;&#x2F;p&gt;
+&lt;p&gt;Au travers de ce talk, venez découvrir les origines de Vue.js, ses concepts, ses outils et son écosystème.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>
