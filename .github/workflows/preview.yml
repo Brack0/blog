@@ -12,39 +12,50 @@ on:
       - 'highlight_themes/**'
       - '.github/workflows/preview.yml'
   workflow_dispatch:
-    inputs:
-      pr_number:
-        description: 'PR number to deploy a preview for'
-        required: true
-        type: number
+
+concurrency:
+  group: pr-preview-${{ github.event.pull_request.number || github.ref_name }}
+  cancel-in-progress: true
 
 jobs:
-  preview:
-    name: Build and deploy PR preview
+  build:
+    name: Build PR preview
     runs-on: ubuntu-latest
     if: >
-      github.base_ref == 'main' ||
-      contains(github.event.pull_request.labels.*.name, 'deploy-preview') ||
+      (github.event_name == 'pull_request' && !github.event.pull_request.draft &&
+       (github.base_ref == 'main' || contains(github.event.pull_request.labels.*.name, 'deploy-preview'))) ||
       github.event_name == 'workflow_dispatch'
+    outputs:
+      pr_number: ${{ steps.pr.outputs.number }}
     permissions:
-      contents: write
-      pull-requests: write
+      contents: read
+      pull-requests: read
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Resolve PR number and preview URL
+      - name: Resolve PR number
         id: pr
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            PR_NUMBER="${{ inputs.pr_number }}"
-          else
-            PR_NUMBER="${{ github.event.pull_request.number }}"
-          fi
-          echo "number=${PR_NUMBER}" >> "$GITHUB_OUTPUT"
-          echo "base_path=/blog/pr-preview/pr-${PR_NUMBER}" >> "$GITHUB_OUTPUT"
-          echo "url=https://brack0.dev/blog/pr-preview/pr-${PR_NUMBER}/" >> "$GITHUB_OUTPUT"
+        uses: actions/github-script@v7
+        with:
+          script: |
+            if (context.eventName === 'workflow_dispatch') {
+              const branch = context.ref.replace('refs/heads/', '');
+              const { data: prs } = await github.rest.pulls.list({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                head: `${context.repo.owner}:${branch}`,
+                state: 'open',
+              });
+              if (prs.length === 0) {
+                core.setFailed(`No open PR found for branch: ${branch}`);
+                return;
+              }
+              core.setOutput('number', prs[0].number);
+            } else {
+              core.setOutput('number', context.payload.pull_request.number);
+            }
 
       - name: Install Zola v0.18.0
         run: |
@@ -54,23 +65,83 @@ jobs:
 
       - name: Build site (preview)
         run: |
-          zola build --base-url "${{ steps.pr.outputs.base_path }}"
+          zola build --base-url "/blog/pr-preview/pr-${{ steps.pr.outputs.number }}"
 
-      - name: Deploy preview to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          destination_dir: pr-preview/pr-${{ steps.pr.outputs.number }}
-          keep_files: true
+          name: pr-preview-${{ steps.pr.outputs.number }}
+          path: public/
+
+  deploy:
+    name: Deploy PR preview
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download preview artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pr-preview-${{ needs.build.outputs.pr_number }}
+          path: /tmp/preview-site
+
+      - name: Deploy to gh-pages branch
+        run: |
+          set -euo pipefail
+          PR_NUMBER=${{ needs.build.outputs.pr_number }}
+          DEST="pr-preview/pr-${PR_NUMBER}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf . --quiet
+          fi
+
+          rm -rf "${DEST}"
+          mkdir -p "${DEST}"
+          cp -r /tmp/preview-site/. "${DEST}/"
+
+          git add "${DEST}"
+          git diff --staged --quiet || \
+            git commit -m "Deploy preview for PR #${PR_NUMBER} [skip ci]"
+          git push origin gh-pages || \
+            (git pull --rebase origin gh-pages && git push origin gh-pages)
 
       - name: Comment preview URL on PR
-        if: github.event_name != 'workflow_dispatch'
+        if: github.event_name == 'pull_request'
         uses: actions/github-script@v7
         with:
           script: |
-            const prNumber = ${{ steps.pr.outputs.number }};
-            const previewUrl = '${{ steps.pr.outputs.url }}';
+            const prNumber = ${{ needs.build.outputs.pr_number }};
+            let previewUrl;
+            try {
+              const { data: pagesInfo } = await github.rest.repos.getPages({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+              });
+              const base = pagesInfo.html_url.endsWith('/')
+                ? pagesInfo.html_url
+                : pagesInfo.html_url + '/';
+              previewUrl = `${base}pr-preview/pr-${prNumber}/`;
+            } catch (err) {
+              core.warning(`Could not fetch GitHub Pages info: ${err.message}. Falling back to github.io URL.`);
+              const owner = context.repo.owner.toLowerCase();
+              const repo = context.repo.repo.toLowerCase();
+              previewUrl = `https://${owner}.github.io/${repo}/pr-preview/pr-${prNumber}/`;
+            }
+
             const marker = '<!-- pr-preview-comment -->';
             const body = `${marker}\n🚀 **Preview deployment ready!**\n\nYour changes are available at: ${previewUrl}\n\n*Last updated: ${new Date().toUTCString()}*`;
 

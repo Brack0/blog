@@ -5,9 +5,6 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
-
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -15,25 +12,65 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build Zola + upload Pages artifact
-        uses: getzola/github-pages@v1
+      - name: Install Zola v0.18.0
+        run: |
+          set -euo pipefail
+          curl -sL https://github.com/getzola/zola/releases/download/v0.18.0/zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          sudo install -m 0755 zola /usr/local/bin/zola
+
+      - name: Build site
+        run: zola build
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
         with:
-          zola_version: v0.18.0
+          name: site
+          path: public/
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      contents: write
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: /tmp/site
+
+      - name: Deploy to gh-pages branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf . --quiet
+          fi
+
+          # Replace site content while preserving PR preview directories
+          find . -maxdepth 1 -mindepth 1 \
+            -not -name '.git' \
+            -not -name 'pr-preview' \
+            -exec rm -rf {} +
+          cp -r /tmp/site/. ./
+
+          git add .
+          git diff --staged --quiet || \
+            git commit -m "Deploy site from ${GITHUB_SHA:0:8} [skip ci]"
+          git push origin gh-pages
