@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a personal blog and podcast site, built with [Zola](https://www.getzola.org/) (v0.18.0), a Rust-based static site generator. The Zola site itself is intentionally free of Node.js, npm, and JavaScript build tooling. However, the repository also contains a Node.js utility script (`scripts/sync_podcast/`) for syncing podcast episodes from an RSS feed — that script has its own `package.json` and `node_modules`, separate from the site build.
+This is a personal blog and podcast site, built with [Zola](https://www.getzola.org/) (v0.18.0), a Rust-based static site generator. The site is intentionally free of Node.js, npm, and JavaScript build tooling. Zola is the single build binary: it compiles Sass, renders Tera templates, and processes Markdown content into a deployable static site.
 
 The site is deployed to GitHub Pages via GitHub Actions and is accessible at `https://brack0.dev/blog`.
 
@@ -19,9 +19,9 @@ The site is deployed to GitHub Pages via GitHub Actions and is accessible at `ht
 | Syntax highlighting | Zola built-in, custom "venator" theme (`highlight_themes/venator.tmTheme`) |
 | i18n | Zola multilingual support (English + French) |
 | Hosting | GitHub Pages |
-| CI/CD | GitHub Actions (`.github/workflows/deploy.yml`, `.github/workflows/sync_podcast.yml`) |
+| CI/CD | GitHub Actions (`.github/workflows/deploy.yml`) |
 
-**The Zola site itself has no `package.json`, no `node_modules`, and no JavaScript build step.** The only exception is `scripts/sync_podcast/`, which is a standalone Node.js utility and is never imported by the site build.
+**There is no `package.json`, no `node_modules`, and no JavaScript build step.**
 
 ---
 
@@ -30,10 +30,7 @@ The site is deployed to GitHub Pages via GitHub Actions and is accessible at `ht
 ```
 /
 ├── .github/
-│   ├── copilot-instructions.md
-│   └── workflows/
-│       ├── deploy.yml          # Build & deploy to GitHub Pages on push to main
-│       └── sync_podcast.yml    # Manually triggered podcast RSS sync workflow
+│   └── workflows/deploy.yml    # Build & deploy to GitHub Pages on push to main
 ├── content/                    # All Markdown content
 │   ├── about.md                # About page
 │   ├── articles/               # Blog posts
@@ -56,11 +53,6 @@ The site is deployed to GitHub Pages via GitHub Actions and is accessible at `ht
 │   ├── pagination.scss         # Pagination controls
 │   ├── buttons.scss            # Button styles
 │   └── footer.scss             # Footer styles
-├── scripts/
-│   └── sync_podcast/           # Standalone Node.js podcast RSS sync utility
-│       ├── sync.js             # Main script (ES module, Node 22)
-│       ├── sync.test.js        # Black-box unit tests (node:test)
-│       └── package.json        # npm metadata and test runner config
 ├── static/                     # Static assets served as-is
 │   ├── favicon.ico
 │   └── og-image.png
@@ -177,9 +169,7 @@ generate_feed = true
 
 The site has **minimal, inline JavaScript** for the dark/light theme toggle only (inside `templates/macros/header.html`). It uses `localStorage` to persist the user's choice and applies `.dark` or `.light` to `:root`.
 
-There is no JavaScript build step, no bundler, and no external JS libraries for the site itself. Keep it that way unless a feature absolutely requires JS, and even then prefer a small inline script.
-
-The `scripts/sync_podcast/` utility is the sole exception: it is a standalone Node.js ES module (not part of the site build) used exclusively via the `sync_podcast.yml` GitHub Actions workflow.
+There is no JavaScript build step, no bundler, and no external JS libraries. Keep it that way unless a feature absolutely requires JS, and even then prefer a small inline script.
 
 ---
 
@@ -217,32 +207,18 @@ Validates links and configuration without building.
 
 ## CI/CD
 
-GitHub Actions automates both deployment and podcast content sync.
-
-### Site deployment (`.github/workflows/deploy.yml`)
-
-Runs automatically on every push to `main`:
+GitHub Actions (`.github/workflows/deploy.yml`) builds and deploys the site automatically on every push to `main`:
 
 1. **build**: Runs `getzola/github-pages@v1` with Zola v0.18.0. Uploads the built site as a Pages artifact.
 2. **deploy**: Deploys the artifact to GitHub Pages via `actions/deploy-pages@v4`.
 
 Concurrency is limited to one deployment at a time (newer runs cancel older ones in the same group).
 
-### Podcast RSS sync (`.github/workflows/sync_podcast.yml`)
-
-Triggered manually via `workflow_dispatch`. Uses Node.js 22 to run `scripts/sync_podcast/sync.js`:
-
-1. Fetches the podcast RSS feed from Anchor/Spotify.
-2. Parses episodes and creates new `content/fec/YYYY-MM-DD-fec-N.md` (EN) and `.fr.md` (FR) files for episodes not yet present on disk.
-3. Commits the new files and opens a pull request for review.
-
-Episodes that already exist on disk are skipped. Run `npm test` in `scripts/sync_podcast/` to execute the unit tests locally.
-
 ---
 
 ## Key Principles
 
-1. **No Node.js in the site build.** Zola handles everything. Do not add JavaScript dependencies or a build step to the site itself. The `scripts/sync_podcast/` Node.js utility is a standalone exception used only via GitHub Actions.
+1. **No Node.js, no npm, no node_modules.** Zola handles everything. Do not add JavaScript dependencies or a build step.
 2. **Bilingual by default.** Every user-visible string must have both English and French translations in `config.toml`. New content should ideally have a `.fr.md` companion.
 3. **Minimal JavaScript.** The only JS is the theme toggle. New features should be implemented in HTML/CSS first.
 4. **Semantic HTML.** Keep the DOM clean and meaningful. Avoid unnecessary wrapper elements.
