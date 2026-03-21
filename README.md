@@ -37,28 +37,6 @@ A CI/CD pipeline is configured via GitHub Actions in [`.github/workflows/deploy.
 
 Make sure GitHub Pages is configured to use **GitHub Actions** as the source in the repository settings.
 
-### Podcast RSS sync
-
-A second workflow ([`.github/workflows/sync_podcast.yml`](./.github/workflows/sync_podcast.yml)) can be triggered manually to pull new episodes from the podcast RSS feed and generate their markdown files.
-
-It runs the Node.js script located in [`scripts/sync_podcast/`](./scripts/sync_podcast/):
-
-```sh
-cd scripts/sync_podcast
-npm ci
-node sync.js
-```
-
-The script creates one English (`.md`) and one French (`.fr.md`) file per new episode under `content/fec/`, then opens a pull request for review. Episodes that already have a file are skipped.
-
-To run tests for the sync script locally:
-
-```sh
-cd scripts/sync_podcast
-npm ci
-npm test
-```
-
 ## Roadmap
 
 **Main goal: Replace previous blog (<https://gitlab.com/Brack0/nebulon>)**
