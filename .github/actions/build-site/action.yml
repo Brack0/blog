@@ -1,0 +1,37 @@
+name: Build Zola site
+description: Install Zola and build the site
+
+inputs:
+  zola-version:
+    description: Zola version to install (e.g. 0.18.0)
+    required: true
+  base-url:
+    description: >
+      Override the base URL passed to `zola build --base-url`.
+      Leave empty to use the value from config.toml.
+    required: false
+    default: ''
+
+runs:
+  using: composite
+  steps:
+    - name: Install Zola v${{ inputs.zola-version }}
+      shell: bash
+      env:
+        ZOLA_VERSION: ${{ inputs.zola-version }}
+      run: |
+        set -euo pipefail
+        curl -sL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | tar xz
+        sudo install -m 0755 zola /usr/local/bin/zola
+
+    - name: Build site
+      shell: bash
+      env:
+        BASE_URL: ${{ inputs.base-url }}
+      run: |
+        set -euo pipefail
+        if [ -n "${BASE_URL}" ]; then
+          zola build --base-url "${BASE_URL}"
+        else
+          zola build
+        fi

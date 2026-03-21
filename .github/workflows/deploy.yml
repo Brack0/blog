@@ -18,14 +18,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Zola v0.18.0
-        run: |
-          set -euo pipefail
-          curl -sL https://github.com/getzola/zola/releases/download/v0.18.0/zola-v0.18.0-x86_64-unknown-linux-gnu.tar.gz | tar xz
-          sudo install -m 0755 zola /usr/local/bin/zola
-
-      - name: Build site
-        run: zola build
+      - name: Install Zola and build site
+        uses: ./.github/actions/build-site
+        with:
+          zola-version: '0.18.0'
 
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
