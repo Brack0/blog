@@ -100,7 +100,7 @@ tags = ["tag-one", "tag-two"]
 ```
 
 - `title` is required. `date` is inferred from the filename prefix (`YYYY-MM-DD-`).
-- `description` is optional — templates fall back to the first paragraph when absent.
+- `description` is optional — templates fall back to `page.summary | striptags` when absent.
 - `summary` can be used to control the excerpt shown in list pages.
 - Tags use kebab-case slugs.
 
