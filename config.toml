@@ -1,4 +1,4 @@
-base_url = "/blog"
+base_url = "/"
 title = "Venator"
 
 default_language = "en"
