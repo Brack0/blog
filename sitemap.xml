@@ -1,450 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>/blog/</loc>
+        <loc>/</loc>
     </url>
     <url>
-        <loc>/blog/about/</loc>
+        <loc>/about/</loc>
     </url>
     <url>
-        <loc>/blog/articles/</loc>
+        <loc>/articles/</loc>
     </url>
     <url>
-        <loc>/blog/articles/advent-of-typescript-2023/</loc>
+        <loc>/articles/advent-of-typescript-2023/</loc>
         <lastmod>2023-12-25</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/angular-injector/</loc>
+        <loc>/articles/angular-injector/</loc>
         <lastmod>2022-10-17</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/css-compatibility/</loc>
+        <loc>/articles/css-compatibility/</loc>
         <lastmod>2022-08-24</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/devfest-nantes-2022-conferences/</loc>
+        <loc>/articles/devfest-nantes-2022-conferences/</loc>
         <lastmod>2023-02-04</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/js-optional-chaining/</loc>
+        <loc>/articles/js-optional-chaining/</loc>
         <lastmod>2022-07-27</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/js-pattern-matching/</loc>
+        <loc>/articles/js-pattern-matching/</loc>
         <lastmod>2022-05-06</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/page/1/</loc>
+        <loc>/articles/page/1/</loc>
     </url>
     <url>
-        <loc>/blog/articles/page/2/</loc>
+        <loc>/articles/page/2/</loc>
     </url>
     <url>
-        <loc>/blog/articles/pihole/</loc>
+        <loc>/articles/pihole/</loc>
         <lastmod>2021-10-20</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/state-management-goodbye-redux/</loc>
+        <loc>/articles/state-management-goodbye-redux/</loc>
         <lastmod>2022-08-23</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/ts-discriminated-union/</loc>
+        <loc>/articles/ts-discriminated-union/</loc>
         <lastmod>2022-05-07</lastmod>
     </url>
     <url>
-        <loc>/blog/articles/welcome-zola/</loc>
+        <loc>/articles/welcome-zola/</loc>
         <lastmod>2024-03-15</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/</loc>
+        <loc>/fec/</loc>
     </url>
     <url>
-        <loc>/blog/fec/fec-1/</loc>
+        <loc>/fec/fec-1/</loc>
         <lastmod>2021-02-16</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-10/</loc>
+        <loc>/fec/fec-10/</loc>
         <lastmod>2022-04-12</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-11/</loc>
+        <loc>/fec/fec-11/</loc>
         <lastmod>2022-06-01</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-12/</loc>
+        <loc>/fec/fec-12/</loc>
         <lastmod>2022-08-29</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-13/</loc>
+        <loc>/fec/fec-13/</loc>
         <lastmod>2022-10-19</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-14/</loc>
+        <loc>/fec/fec-14/</loc>
         <lastmod>2022-12-28</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-15/</loc>
+        <loc>/fec/fec-15/</loc>
         <lastmod>2023-02-22</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-16/</loc>
+        <loc>/fec/fec-16/</loc>
         <lastmod>2023-05-01</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-17/</loc>
+        <loc>/fec/fec-17/</loc>
         <lastmod>2023-07-13</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-18/</loc>
+        <loc>/fec/fec-18/</loc>
         <lastmod>2023-09-14</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-2/</loc>
+        <loc>/fec/fec-2/</loc>
         <lastmod>2021-03-16</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-3/</loc>
+        <loc>/fec/fec-3/</loc>
         <lastmod>2021-04-28</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-4/</loc>
+        <loc>/fec/fec-4/</loc>
         <lastmod>2021-06-03</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-5/</loc>
+        <loc>/fec/fec-5/</loc>
         <lastmod>2021-07-22</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-6/</loc>
+        <loc>/fec/fec-6/</loc>
         <lastmod>2021-09-23</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-7/</loc>
+        <loc>/fec/fec-7/</loc>
         <lastmod>2021-11-04</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-8/</loc>
+        <loc>/fec/fec-8/</loc>
         <lastmod>2021-12-31</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/fec-9/</loc>
+        <loc>/fec/fec-9/</loc>
         <lastmod>2022-02-08</lastmod>
     </url>
     <url>
-        <loc>/blog/fec/page/1/</loc>
+        <loc>/fec/page/1/</loc>
     </url>
     <url>
-        <loc>/blog/fec/page/2/</loc>
+        <loc>/fec/page/2/</loc>
     </url>
     <url>
-        <loc>/blog/fr/</loc>
+        <loc>/fr/</loc>
     </url>
     <url>
-        <loc>/blog/fr/about/</loc>
+        <loc>/fr/about/</loc>
     </url>
     <url>
-        <loc>/blog/fr/articles/</loc>
+        <loc>/fr/articles/</loc>
     </url>
     <url>
-        <loc>/blog/fr/articles/advent-of-typescript-2023/</loc>
+        <loc>/fr/articles/advent-of-typescript-2023/</loc>
         <lastmod>2023-12-25</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/angular-enhance/</loc>
+        <loc>/fr/articles/angular-enhance/</loc>
         <lastmod>2022-06-22</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/angular-injector/</loc>
+        <loc>/fr/articles/angular-injector/</loc>
         <lastmod>2022-10-17</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/angular-template-performance/</loc>
+        <loc>/fr/articles/angular-template-performance/</loc>
         <lastmod>2021-10-14</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/css-compatibility/</loc>
+        <loc>/fr/articles/css-compatibility/</loc>
         <lastmod>2022-08-24</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/devfest-nantes-2022-conferences/</loc>
+        <loc>/fr/articles/devfest-nantes-2022-conferences/</loc>
         <lastmod>2023-02-04</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/enter-the-vuejs/</loc>
+        <loc>/fr/articles/enter-the-vuejs/</loc>
         <lastmod>2021-07-27</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/js-optional-chaining/</loc>
+        <loc>/fr/articles/js-optional-chaining/</loc>
         <lastmod>2022-07-27</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/js-pattern-matching/</loc>
+        <loc>/fr/articles/js-pattern-matching/</loc>
         <lastmod>2022-05-06</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/page/1/</loc>
+        <loc>/fr/articles/page/1/</loc>
     </url>
     <url>
-        <loc>/blog/fr/articles/page/2/</loc>
+        <loc>/fr/articles/page/2/</loc>
     </url>
     <url>
-        <loc>/blog/fr/articles/page/3/</loc>
+        <loc>/fr/articles/page/3/</loc>
     </url>
     <url>
-        <loc>/blog/fr/articles/state-management-goodbye-redux/</loc>
+        <loc>/fr/articles/state-management-goodbye-redux/</loc>
         <lastmod>2022-08-23</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/articles/ts-discriminated-union/</loc>
+        <loc>/fr/articles/ts-discriminated-union/</loc>
         <lastmod>2022-05-07</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/</loc>
+        <loc>/fr/fec/</loc>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-1/</loc>
+        <loc>/fr/fec/fec-1/</loc>
         <lastmod>2021-02-16</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-10/</loc>
+        <loc>/fr/fec/fec-10/</loc>
         <lastmod>2022-04-12</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-11/</loc>
+        <loc>/fr/fec/fec-11/</loc>
         <lastmod>2022-06-01</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-12/</loc>
+        <loc>/fr/fec/fec-12/</loc>
         <lastmod>2022-08-29</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-13/</loc>
+        <loc>/fr/fec/fec-13/</loc>
         <lastmod>2022-10-19</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-14/</loc>
+        <loc>/fr/fec/fec-14/</loc>
         <lastmod>2022-12-28</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-15/</loc>
+        <loc>/fr/fec/fec-15/</loc>
         <lastmod>2023-02-22</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-16/</loc>
+        <loc>/fr/fec/fec-16/</loc>
         <lastmod>2023-05-01</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-17/</loc>
+        <loc>/fr/fec/fec-17/</loc>
         <lastmod>2023-07-13</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-18/</loc>
+        <loc>/fr/fec/fec-18/</loc>
         <lastmod>2023-09-14</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-2/</loc>
+        <loc>/fr/fec/fec-2/</loc>
         <lastmod>2021-03-16</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-3/</loc>
+        <loc>/fr/fec/fec-3/</loc>
         <lastmod>2021-04-28</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-4/</loc>
+        <loc>/fr/fec/fec-4/</loc>
         <lastmod>2021-06-03</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-5/</loc>
+        <loc>/fr/fec/fec-5/</loc>
         <lastmod>2021-07-22</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-6/</loc>
+        <loc>/fr/fec/fec-6/</loc>
         <lastmod>2021-09-23</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-7/</loc>
+        <loc>/fr/fec/fec-7/</loc>
         <lastmod>2021-11-04</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-8/</loc>
+        <loc>/fr/fec/fec-8/</loc>
         <lastmod>2021-12-31</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/fec-9/</loc>
+        <loc>/fr/fec/fec-9/</loc>
         <lastmod>2022-02-08</lastmod>
     </url>
     <url>
-        <loc>/blog/fr/fec/page/1/</loc>
+        <loc>/fr/fec/page/1/</loc>
     </url>
     <url>
-        <loc>/blog/fr/fec/page/2/</loc>
+        <loc>/fr/fec/page/2/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/</loc>
+        <loc>/fr/tags/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/angular/</loc>
+        <loc>/fr/tags/angular/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/avance/</loc>
+        <loc>/fr/tags/avance/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/compilateurs/</loc>
+        <loc>/fr/tags/compilateurs/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/conference/</loc>
+        <loc>/fr/tags/conference/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/contenu/</loc>
+        <loc>/fr/tags/contenu/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/css/</loc>
+        <loc>/fr/tags/css/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/dev/</loc>
+        <loc>/fr/tags/dev/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/devfest/</loc>
+        <loc>/fr/tags/devfest/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/frontend/</loc>
+        <loc>/fr/tags/frontend/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/gestion-d-etat/</loc>
+        <loc>/fr/tags/gestion-d-etat/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/html5/</loc>
+        <loc>/fr/tags/html5/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/jamstack/</loc>
+        <loc>/fr/tags/jamstack/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/javascript/</loc>
+        <loc>/fr/tags/javascript/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/linters/</loc>
+        <loc>/fr/tags/linters/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/nantes/</loc>
+        <loc>/fr/tags/nantes/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/npm/</loc>
+        <loc>/fr/tags/npm/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/nuxtjs/</loc>
+        <loc>/fr/tags/nuxtjs/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/opinion/</loc>
+        <loc>/fr/tags/opinion/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/performance/</loc>
+        <loc>/fr/tags/performance/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/podcast/</loc>
+        <loc>/fr/tags/podcast/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/qwik/</loc>
+        <loc>/fr/tags/qwik/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/signals/</loc>
+        <loc>/fr/tags/signals/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/typescript/</loc>
+        <loc>/fr/tags/typescript/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/vuejs/</loc>
+        <loc>/fr/tags/vuejs/</loc>
     </url>
     <url>
-        <loc>/blog/fr/tags/webpack/</loc>
+        <loc>/fr/tags/webpack/</loc>
     </url>
     <url>
-        <loc>/blog/tags/</loc>
+        <loc>/tags/</loc>
     </url>
     <url>
-        <loc>/blog/tags/advanced/</loc>
+        <loc>/tags/advanced/</loc>
     </url>
     <url>
-        <loc>/blog/tags/angular/</loc>
+        <loc>/tags/angular/</loc>
     </url>
     <url>
-        <loc>/blog/tags/compilers/</loc>
+        <loc>/tags/compilers/</loc>
     </url>
     <url>
-        <loc>/blog/tags/conference/</loc>
+        <loc>/tags/conference/</loc>
     </url>
     <url>
-        <loc>/blog/tags/content/</loc>
+        <loc>/tags/content/</loc>
     </url>
     <url>
-        <loc>/blog/tags/css/</loc>
+        <loc>/tags/css/</loc>
     </url>
     <url>
-        <loc>/blog/tags/dev/</loc>
+        <loc>/tags/dev/</loc>
     </url>
     <url>
-        <loc>/blog/tags/devfest/</loc>
+        <loc>/tags/devfest/</loc>
     </url>
     <url>
-        <loc>/blog/tags/dns/</loc>
+        <loc>/tags/dns/</loc>
     </url>
     <url>
-        <loc>/blog/tags/frontend/</loc>
+        <loc>/tags/frontend/</loc>
     </url>
     <url>
-        <loc>/blog/tags/home-automation/</loc>
+        <loc>/tags/home-automation/</loc>
     </url>
     <url>
-        <loc>/blog/tags/html5/</loc>
+        <loc>/tags/html5/</loc>
     </url>
     <url>
-        <loc>/blog/tags/jamstack/</loc>
+        <loc>/tags/jamstack/</loc>
     </url>
     <url>
-        <loc>/blog/tags/javascript/</loc>
+        <loc>/tags/javascript/</loc>
     </url>
     <url>
-        <loc>/blog/tags/linters/</loc>
+        <loc>/tags/linters/</loc>
     </url>
     <url>
-        <loc>/blog/tags/nantes/</loc>
+        <loc>/tags/nantes/</loc>
     </url>
     <url>
-        <loc>/blog/tags/network/</loc>
+        <loc>/tags/network/</loc>
     </url>
     <url>
-        <loc>/blog/tags/npm/</loc>
+        <loc>/tags/npm/</loc>
     </url>
     <url>
-        <loc>/blog/tags/nuxtjs/</loc>
+        <loc>/tags/nuxtjs/</loc>
     </url>
     <url>
-        <loc>/blog/tags/opinion/</loc>
+        <loc>/tags/opinion/</loc>
     </url>
     <url>
-        <loc>/blog/tags/podcast/</loc>
+        <loc>/tags/podcast/</loc>
     </url>
     <url>
-        <loc>/blog/tags/qwik/</loc>
+        <loc>/tags/qwik/</loc>
     </url>
     <url>
-        <loc>/blog/tags/rust/</loc>
+        <loc>/tags/rust/</loc>
     </url>
     <url>
-        <loc>/blog/tags/signals/</loc>
+        <loc>/tags/signals/</loc>
     </url>
     <url>
-        <loc>/blog/tags/state-management/</loc>
+        <loc>/tags/state-management/</loc>
     </url>
     <url>
-        <loc>/blog/tags/typescript/</loc>
+        <loc>/tags/typescript/</loc>
     </url>
     <url>
-        <loc>/blog/tags/vuejs/</loc>
+        <loc>/tags/vuejs/</loc>
     </url>
     <url>
-        <loc>/blog/tags/webpack/</loc>
+        <loc>/tags/webpack/</loc>
     </url>
     <url>
-        <loc>/blog/tags/zola/</loc>
+        <loc>/tags/zola/</loc>
     </url>
 </urlset>
