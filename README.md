@@ -45,8 +45,8 @@ Tasks are available in [TODO.md](./TODO.md).
 
 ## Contributing
 
-Not open.
+See [CONTRIBUTING](./CONTRIBUTING.md).
 
 ## License
 
-MIT License. Check [LICENSE](./LICENSE) for more details.
+MIT License. Check [LICENSE](./LICENSE.md) for more details.
