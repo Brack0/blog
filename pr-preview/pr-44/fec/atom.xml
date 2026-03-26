@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Venator - Front-End Chronicles</title>
-    <link rel="self" type="application/atom+xml" href="/blog/pr-preview/pr-44/fec/atom.xml"/>
-    <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/"/>
+    <link rel="self" type="application/atom+xml" href="/pr-preview/pr-44/fec/atom.xml"/>
+    <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-09-14T00:00:00+00:00</updated>
-    <id>/blog/pr-preview/pr-44/fec/atom.xml</id>
+    <id>/pr-preview/pr-44/fec/atom.xml</id>
     <entry xml:lang="en">
         <title>#18 - From JSLint to ESLint: The Evolution of Major JavaScript Linters</title>
         <published>2023-09-14T00:00:00+00:00</published>
@@ -23,8 +23,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-18/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-18/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-18/"/>
+        <id>/pr-preview/pr-44/fec/fec-18/</id>
         
         <summary type="html">&lt;p&gt;In this back-to-school episode, we revisit the history of ESLint.&lt;&#x2F;p&gt;
 </summary>
@@ -47,8 +47,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-17/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-17/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-17/"/>
+        <id>/pr-preview/pr-44/fec/fec-17/</id>
         
         <summary type="html">&lt;p&gt;In this summer episode, we wanted to step away from the web for a moment and initiate a discussion about compilation and the origins of linters.&lt;&#x2F;p&gt;
 </summary>
@@ -71,8 +71,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-16/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-16/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-16/"/>
+        <id>/pr-preview/pr-44/fec/fec-16/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about signals and a bit more about Angular!&lt;&#x2F;p&gt;
 &lt;p&gt;We start from the basics of what a signal is and delve into its implementations in various frameworks.&lt;&#x2F;p&gt;
@@ -96,8 +96,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-15/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-15/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-15/"/>
+        <id>/pr-preview/pr-44/fec/fec-15/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about Angular features from 13 to 15.1.&lt;&#x2F;p&gt;
 &lt;p&gt;If you thought about migrating but missed new features, this episode is for you!&lt;&#x2F;p&gt;
@@ -121,8 +121,8 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-14/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-14/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-14/"/>
+        <id>/pr-preview/pr-44/fec/fec-14/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about the arrival of Turbopack.&lt;&#x2F;p&gt;
 &lt;p&gt;But where did we come from?
@@ -147,8 +147,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-13/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-13/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-13/"/>
+        <id>/pr-preview/pr-44/fec/fec-13/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about NPM, PNPM, Yarn and how they resolve dependencies.&lt;&#x2F;p&gt;
 </summary>
@@ -171,8 +171,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-12/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-12/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-12/"/>
+        <id>/pr-preview/pr-44/fec/fec-12/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about Docusaurus and what this tool can do for us.&lt;&#x2F;p&gt;
 </summary>
@@ -195,8 +195,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-11/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-11/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-11/"/>
+        <id>/pr-preview/pr-44/fec/fec-11/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about Qwik and what this new framework can bring us!&lt;&#x2F;p&gt;
 </summary>
@@ -231,8 +231,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-10/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-10/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-10/"/>
+        <id>/pr-preview/pr-44/fec/fec-10/</id>
         
         <summary type="html">&lt;p&gt;Anniversary episode!&lt;&#x2F;p&gt;
 &lt;p&gt;In the “talk and chill” format, we receive two guests also front-end developer to discuss around the theme “What is a front-end developer in 2022 ?”.&lt;&#x2F;p&gt;
@@ -257,8 +257,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-9/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-9/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-9/"/>
+        <id>/pr-preview/pr-44/fec/fec-9/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about CSS and some features for 2022 !&lt;&#x2F;p&gt;
 </summary>
@@ -281,8 +281,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-8/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-8/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-8/"/>
+        <id>/pr-preview/pr-44/fec/fec-8/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about NuxtJS and what Nuxt 3 will bring!&lt;&#x2F;p&gt;
 </summary>
@@ -305,8 +305,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-7/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-7/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-7/"/>
+        <id>/pr-preview/pr-44/fec/fec-7/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about the Devfest Nantes 2021.&lt;&#x2F;p&gt;
 </summary>
@@ -329,8 +329,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-6/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-6/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-6/"/>
+        <id>/pr-preview/pr-44/fec/fec-6/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about… HTML5!&lt;&#x2F;p&gt;
 </summary>
@@ -353,8 +353,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-5/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-5/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-5/"/>
+        <id>/pr-preview/pr-44/fec/fec-5/</id>
         
         <summary type="html">&lt;p&gt;In this new episode in Discovery format, we talk about JAMstack!&lt;&#x2F;p&gt;
 &lt;p&gt;As a reminder, in this type of format, we make you discover a subject together by skimming over the important points&#x2F;subjects&#x2F;concepts.&lt;&#x2F;p&gt;
@@ -378,8 +378,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-4/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-4/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-4/"/>
+        <id>/pr-preview/pr-44/fec/fec-4/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about what we think of the new version of Angular (v12) !&lt;&#x2F;p&gt;
 </summary>
@@ -402,8 +402,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-3/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-3/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-3/"/>
+        <id>/pr-preview/pr-44/fec/fec-3/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we present a new format: Discovery ! We make you discover a subject together by flying over the important points&#x2F;subjects&#x2F;concepts.&lt;&#x2F;p&gt;
 &lt;p&gt;Today, we are talking about Vue.js!&lt;&#x2F;p&gt;
@@ -427,8 +427,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-2/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-2/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-2/"/>
+        <id>/pr-preview/pr-44/fec/fec-2/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about what we think of TypeScript and its potential usefulness in modern projects.&lt;&#x2F;p&gt;
 </summary>
@@ -451,8 +451,8 @@ We review the bundlers and their ancestors.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="/blog/pr-preview/pr-44/fec/fec-1/"/>
-        <id>/blog/pr-preview/pr-44/fec/fec-1/</id>
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-44/fec/fec-1/"/>
+        <id>/pr-preview/pr-44/fec/fec-1/</id>
         
         <summary type="html">&lt;p&gt;In this episode, we talk about what we learned from the releases of Angular 5 to Angular 11 and what we think about it.&lt;&#x2F;p&gt;
 </summary>
