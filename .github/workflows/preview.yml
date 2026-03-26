@@ -7,7 +7,6 @@ on:
       - reopened
       - synchronize
       - closed
-      - ready_for_review
 
 concurrency: preview-${{ github.ref }}
 
