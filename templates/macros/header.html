@@ -38,28 +38,7 @@
         <li class="header__menu-link">
             <input type="checkbox" id="theme-switch" class="header__theme-switch" role="switch" />
             <label for="theme-switch" class="header__theme-switch-label"><span class="header__theme-switch-label-text">{{ trans(key="toggle_theme", lang=lang) }}</span></label>
-            <script>
-                const themeSwitch = document.querySelector('#theme-switch');
-                const darkTheme = "dark";
-                const lightTheme = "light";
-                const currentTheme = localStorage.getItem('theme');
-                const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? darkTheme : lightTheme;
-
-                themeSwitch.checked = prefersColorScheme === lightTheme;
-
-                if (currentTheme) {
-                    document.documentElement.classList.add(currentTheme);
-                    themeSwitch.checked = currentTheme === lightTheme;
-                }
-
-                themeSwitch.addEventListener('change', (event) => {
-                    const newTheme = event.target.checked ? lightTheme : darkTheme;
-                    const oldTheme = event.target.checked ? darkTheme : lightTheme;
-                    document.documentElement.classList.remove(oldTheme);
-                    document.documentElement.classList.add(newTheme);
-                    localStorage.setItem('theme', newTheme);
-                });
-            </script>
+            <script src='{{ get_url(path="theme.js", trailing_slash=false) }}'></script>
         </li>
     </ul>
 </nav>
