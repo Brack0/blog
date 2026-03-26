@@ -55,7 +55,6 @@ hero_content_3 = ". I am a developer, casual blogger & co-host of Front-end chro
 
 lost = "Lost?"
 page_doesnt_exist = "This page does not exist."
-back_to_home = "Go back home"
 
 paginator_newer_posts = "Newer posts"
 paginator_older_posts = "Older posts"
@@ -87,7 +86,6 @@ hero_content_3 = ". Je suis développeur, blogueur intermittent et co-animateur 
 
 lost = "Perdu ?"
 page_doesnt_exist = "Cette page n'existe pas."
-back_to_home = "Retourner à l'accueil"
 
 paginator_newer_posts = "Posts plus récents"
 paginator_older_posts = "Posts plus anciens"

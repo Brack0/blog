@@ -22,6 +22,8 @@
         {%- if paginator -%}
         {%- set show_pages = paginator.pages -%}
         {%- else -%}
+        {%- set section = get_section(path="_index.md") -%}
+
         {%- set show_pages = section.pages -%}
         {%- endif -%}
 
@@ -58,7 +60,6 @@
             </div>
         </div>
         {%- endfor -%}
-        {%- if paginator -%}
         <div class="pagination">
             <div class="pagination__buttons">
                 {%- if paginator.previous -%}
@@ -79,7 +80,6 @@
                 {%- endif -%}
             </div>
         </div>
-        {%- endif -%}
     </div>
 </div>
 {%- endblock content -%}
