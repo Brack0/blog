@@ -16,6 +16,7 @@ a.button {
   text-align: center;
   border-radius: 8px;
   border: 1px solid transparent;
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
   outline: none;
@@ -85,6 +86,7 @@ a.read-more:active {
     font-weight: 500;
     border-radius: 8px;
     border: 1px solid transparent;
+    -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
     outline: none;
