@@ -20,6 +20,12 @@
     <div class="post">
         <h1 class="post-title">{%- block heading -%}{{ trans(key="lost", lang=lang) }}{%- endblock heading -%}</h1>
         <p>{%- block message -%}{{ trans(key="page_doesnt_exist", lang=lang) }}{%- endblock message -%}</p>
+        {%- if lang == config.default_language -%}
+        {%- set home_url = get_url(path="/", trailing_slash=true) -%}
+        {%- else -%}
+        {%- set home_url = get_url(path="/", lang=lang) -%}
+        {%- endif -%}
+        <a class="button" href="{{ home_url | safe }}">{{ trans(key="back_to_home", lang=lang) }}</a>
     </div>
 </div>
 {%- endblock content -%}
