@@ -20,11 +20,5 @@
     <div class="error-page__code">404</div>
     <h1 class="error-page__heading">{{ trans(key="lost", lang=lang) }}</h1>
     <p class="error-page__message">{{ trans(key="not_found_description", lang=lang) }}</p>
-    <div class="button-container">
-        <a class="button" href='{{ get_url(path="/", trailing_slash=true) | safe }}'>
-            <span class="button__icon">←</span>&nbsp;
-            <span class="button__text">{{ trans(key="not_found_go_home", lang=lang) }}</span>
-        </a>
-    </div>
 </div>
 {%- endblock content -%}
