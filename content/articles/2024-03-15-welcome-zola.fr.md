@@ -5,15 +5,15 @@ title = "Bienvenue Zola !"
 tags = ["Zola", "Rust", "Contenu"]
 +++
 
-Un petit changement pour vous, un grand changement pour moi : je passe à [Zola](https://www.getzola.org/) pour mon blog personnel. C'est mon premier article de blog avec Zola. J'utilise également un nouveau thème, ce qui m'a aussi convaincu de changer. [Docusaurus](https://docusaurus.io/) est bien adapté à la documentation (technique), mais pas si élégant pour le blogging (avis personnel).
+Un petit changement pour vous, un grand changement pour moi : je passe à [Zola](https://www.getzola.org/) pour mon blog personnel. C'est mon premier article de blog avec Zola. J'utilise également un nouveau thème, ce qui m'a aussi convaincu de changer. [Docusaurus](https://docusaurus.io/) (précédente stack utilisée pour ce blog) est bien adapté à la documentation (technique), mais pas si élégant pour le blogging (avis personnel).
 
 <!-- more -->
 
 ## About Docusaurus
 
-J'ai commencé mon blog début 2022. Mes exigences étaient simples : une solution open source (et gratuite) basée sur quelque chose que je connaissais. J'ai découvert Docusaurus via la documentation d'outils que j'utilise, comme Jest. Il vient avec tout ce dont j'ai besoin dès le départ et de nombreuses fonctionnalités que je configurerai plus tard. Ces fonctionnalités incluent l'i18n, le SEO, les plugins, le Markdown étendu (MDX, Front matter, remark, etc).
+J'ai commencé mon blog début 2022. Mes exigences étaient simples : une solution open source (et gratuite) basée sur quelque chose que je connaissais. J'ai découvert Docusaurus via la documentation d'outils que j'utilise, comme Jest. Il vient avec tout ce dont j'ai besoin dès le départ et de nombreuses fonctionnalités que je peux configurer plus tard. Ces fonctionnalités incluent l'i18n, le SEO, les plugins, le Markdown étendu (MDX, Front matter, remark, etc).
 
-Comme beaucoup de développeurs, j'adore programmer. Cependant, cela peut amener à apprécier les outils plus que les applications construites avec eux. Cela va à l'encontre d'une approche pragmatique. Je voulais corriger ça pour mon blog. Quand on travaille sur des projets personnels, le chemin ET la destination comptent, car on apprend beaucoup et on obtient quelque chose au final (en quelque sorte, [insérez ici le mème du projet perso jamais terminé]). Mais quand il s'agit de blogging, le chemin c'est écrire des articles, pas construire la meilleure application de blogging. C'était l'objectif principal quand j'ai lancé mon blog.
+Comme beaucoup de développeurs, j'adore programmer. Cependant, cela peut amener à apprécier les outils plus que les applications construites avec eux. Cela va à l'encontre d'une approche pragmatique. Je voulais corriger ça pour mon blog. Quand on travaille sur des projets personnels, le chemin ET la destination comptent, car on apprend beaucoup et on obtient quelque chose au final (en quelque sorte, [insérez ici le meme du projet perso jamais terminé]). Mais quand il s'agit de blogging, le chemin c'est écrire des articles, pas construire la meilleure application de blogging. C'était l'objectif principal quand j'ai lancé mon blog.
 
 J'ai choisi Docusaurus parce que je pouvais me concentrer sur le contenu (articles, épisodes de podcast, etc) plutôt que sur le projet lui-même. Par exemple, j'étais en mesure d'écrire et de déployer en production des articles avec uniquement un accès à un IDE web. Écrire du texte ou du markdown et produire du HTML/CSS/JS, c'est ce que j'attends d'un générateur de sites statiques.
 
@@ -88,7 +88,7 @@ zola serve --base-url /
 
 ### Style / Design
 
-J'ai déplacé le thème Terminimal dans le codebase, ce qui me permet de modifier les choses qui ne me conviennent pas. Vous pouvez voir ci-dessous du CSS pour les titres. Les tailles de police sont trop proches les unes des autres et on ne les distingue pas très bien. Quoi qu'il en soit, j'ai effectué quelques mises à jour du design pour correspondre à mes attentes (visuel, accessibilité, etc).
+J'ai déplacé le thème Terminimal dans la codebase, ce qui me permet de modifier les choses qui ne me conviennent pas. Vous pouvez voir ci-dessous du CSS pour les titres. Les tailles de police sont trop proches les unes des autres et on ne les distingue pas très bien. Quoi qu'il en soit, j'ai effectué quelques mises à jour du design pour correspondre à mes attentes (visuel, accessibilité, etc).
 
 ```css
 h1 {
