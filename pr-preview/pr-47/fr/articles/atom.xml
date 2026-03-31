@@ -4,8 +4,28 @@
     <link rel="self" type="application/atom+xml" href="/pr-preview/pr-47/fr/articles/atom.xml"/>
     <link rel="alternate" type="text/html" href="/pr-preview/pr-47/fr/articles/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-12-25T00:00:00+00:00</updated>
+    <updated>2024-03-15T00:00:00+00:00</updated>
     <id>/pr-preview/pr-47/fr/articles/atom.xml</id>
+    <entry xml:lang="fr">
+        <title>Bienvenue Zola !</title>
+        <published>2024-03-15T00:00:00+00:00</published>
+        <updated>2024-03-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Denis Souron
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/pr-preview/pr-47/fr/articles/welcome-zola/"/>
+        <id>/pr-preview/pr-47/fr/articles/welcome-zola/</id>
+        
+        <summary type="html">&lt;p&gt;Un petit changement pour vous, un grand changement pour moi : je passe à &lt;a rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; pour mon blog personnel. C’est mon premier article de blog avec Zola. J’utilise également un nouveau thème, ce qui m’a aussi convaincu de changer. &lt;a rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docusaurus.io&#x2F;&quot;&gt;Docusaurus&lt;&#x2F;a&gt; (précédente stack utilisée pour ce blog) est bien adapté à la documentation (technique), mais pas si élégant pour le blogging (avis personnel).&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
     <entry xml:lang="fr">
         <title>Advent of TypeScript 2023</title>
         <published>2023-12-25T00:00:00+00:00</published>

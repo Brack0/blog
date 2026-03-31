@@ -37,9 +37,6 @@
         <loc>/pr-preview/pr-47/articles/page/1/</loc>
     </url>
     <url>
-        <loc>/pr-preview/pr-47/articles/page/2/</loc>
-    </url>
-    <url>
         <loc>/pr-preview/pr-47/articles/pihole/</loc>
         <lastmod>2021-10-20</lastmod>
     </url>
@@ -134,9 +131,6 @@
         <loc>/pr-preview/pr-47/fec/page/1/</loc>
     </url>
     <url>
-        <loc>/pr-preview/pr-47/fec/page/2/</loc>
-    </url>
-    <url>
         <loc>/pr-preview/pr-47/fr/</loc>
     </url>
     <url>
@@ -185,18 +179,16 @@
         <loc>/pr-preview/pr-47/fr/articles/page/1/</loc>
     </url>
     <url>
-        <loc>/pr-preview/pr-47/fr/articles/page/2/</loc>
-    </url>
-    <url>
-        <loc>/pr-preview/pr-47/fr/articles/page/3/</loc>
-    </url>
-    <url>
         <loc>/pr-preview/pr-47/fr/articles/state-management-goodbye-redux/</loc>
         <lastmod>2022-08-23</lastmod>
     </url>
     <url>
         <loc>/pr-preview/pr-47/fr/articles/ts-discriminated-union/</loc>
         <lastmod>2022-05-07</lastmod>
+    </url>
+    <url>
+        <loc>/pr-preview/pr-47/fr/articles/welcome-zola/</loc>
+        <lastmod>2024-03-15</lastmod>
     </url>
     <url>
         <loc>/pr-preview/pr-47/fr/fec/</loc>
@@ -277,9 +269,6 @@
         <loc>/pr-preview/pr-47/fr/fec/page/1/</loc>
     </url>
     <url>
-        <loc>/pr-preview/pr-47/fr/fec/page/2/</loc>
-    </url>
-    <url>
         <loc>/pr-preview/pr-47/fr/tags/</loc>
     </url>
     <url>
@@ -346,6 +335,9 @@
         <loc>/pr-preview/pr-47/fr/tags/qwik/</loc>
     </url>
     <url>
+        <loc>/pr-preview/pr-47/fr/tags/rust/</loc>
+    </url>
+    <url>
         <loc>/pr-preview/pr-47/fr/tags/signals/</loc>
     </url>
     <url>
@@ -356,6 +348,9 @@
     </url>
     <url>
         <loc>/pr-preview/pr-47/fr/tags/webpack/</loc>
+    </url>
+    <url>
+        <loc>/pr-preview/pr-47/fr/tags/zola/</loc>
     </url>
     <url>
         <loc>/pr-preview/pr-47/tags/</loc>
