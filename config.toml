@@ -54,7 +54,7 @@ hero_content_2 = "Denis Souron"
 hero_content_3 = ". I am a developer, casual blogger & co-host of Front-end chronicles podcast."
 
 lost = "Lost?"
-page_doesnt_exist = "This page does not exist."
+not_found_description = "The page you are looking for does not exist or has been moved."
 
 paginator_newer_posts = "Newer posts"
 paginator_older_posts = "Older posts"
@@ -85,7 +85,7 @@ hero_content_2 = "Denis Souron"
 hero_content_3 = ". Je suis développeur, blogueur intermittent et co-animateur du podcast Front-end chronicles."
 
 lost = "Perdu ?"
-page_doesnt_exist = "Cette page n'existe pas."
+not_found_description = "La page que vous cherchez n'existe pas ou a été déplacée."
 
 paginator_newer_posts = "Posts plus récents"
 paginator_older_posts = "Posts plus anciens"
