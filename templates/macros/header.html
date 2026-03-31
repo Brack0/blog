@@ -36,8 +36,8 @@
         {%- endif -%}
         {%- endfor -%}
         <li class="header__menu-link">
-            <input type="checkbox" id="theme-switch" class="header__theme-switch" />
-            <label for="theme-switch" class="header__theme-switch-label"><span class="hidden">{{ trans(key="toggle_theme", lang=lang) }}</span></label>
+            <input type="checkbox" id="theme-switch" class="header__theme-switch" aria-label="{{ trans(key='toggle_theme', lang=lang) }}" />
+            <label for="theme-switch" class="header__theme-switch-label"></label>
             <script>
                 const themeSwitch = document.querySelector('#theme-switch');
                 const darkTheme = "dark";
