@@ -187,6 +187,10 @@
         <lastmod>2022-05-07</lastmod>
     </url>
     <url>
+        <loc>/fr/articles/welcome-zola/</loc>
+        <lastmod>2024-03-15</lastmod>
+    </url>
+    <url>
         <loc>/fr/fec/</loc>
     </url>
     <url>
@@ -331,6 +335,9 @@
         <loc>/fr/tags/qwik/</loc>
     </url>
     <url>
+        <loc>/fr/tags/rust/</loc>
+    </url>
+    <url>
         <loc>/fr/tags/signals/</loc>
     </url>
     <url>
@@ -341,6 +348,9 @@
     </url>
     <url>
         <loc>/fr/tags/webpack/</loc>
+    </url>
+    <url>
+        <loc>/fr/tags/zola/</loc>
     </url>
     <url>
         <loc>/tags/</loc>
