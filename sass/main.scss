@@ -379,3 +379,29 @@ hr {
     height: 352px;
   }
 }
+
+.error-page {
+  width: 100%;
+  text-align: center;
+  padding: 4rem 0;
+
+  &__code {
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: $phone-max-width) {
+      font-size: 5rem;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 1rem;
+  }
+
+  &__message {
+    margin-bottom: 2rem;
+  }
+}
