@@ -37,9 +37,6 @@
         <loc>/articles/page/1/</loc>
     </url>
     <url>
-        <loc>/articles/page/2/</loc>
-    </url>
-    <url>
         <loc>/articles/pihole/</loc>
         <lastmod>2021-10-20</lastmod>
     </url>
@@ -134,9 +131,6 @@
         <loc>/fec/page/1/</loc>
     </url>
     <url>
-        <loc>/fec/page/2/</loc>
-    </url>
-    <url>
         <loc>/fr/</loc>
     </url>
     <url>
@@ -183,12 +177,6 @@
     </url>
     <url>
         <loc>/fr/articles/page/1/</loc>
-    </url>
-    <url>
-        <loc>/fr/articles/page/2/</loc>
-    </url>
-    <url>
-        <loc>/fr/articles/page/3/</loc>
     </url>
     <url>
         <loc>/fr/articles/state-management-goodbye-redux/</loc>
@@ -275,9 +263,6 @@
     </url>
     <url>
         <loc>/fr/fec/page/1/</loc>
-    </url>
-    <url>
-        <loc>/fr/fec/page/2/</loc>
     </url>
     <url>
         <loc>/fr/tags/</loc>
