@@ -1,18 +1,18 @@
 @import 'variables';
 
 .pagination {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 
   &__title {
     display: flex;
     text-align: center;
     position: relative;
-    margin: 100px 0 20px;
+    margin: 6.25rem 0 1.25rem;
 
     &-h {
       text-align: center;
       margin: 0 auto;
-      padding: 5px 10px;
+      padding: 0.3125rem 0.625rem;
       background: var(--background);
       font-size: .8rem;
       text-transform: uppercase;
@@ -25,7 +25,7 @@
       left: 0;
       right: 0;
       width: 100%;
-      margin-top: 15px;
+      margin-top: 0.9375rem;
       z-index: 0;
     }
   }
@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   max-width: 40%;
   padding: 0;
   cursor: pointer;
@@ -58,12 +58,12 @@
   }
 
   + .button {
-    margin-left: 10px;
+    margin-left: 0.625rem;
   }
 
   a {
     display: flex;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
