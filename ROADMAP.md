@@ -53,7 +53,7 @@ This roadmap outlines the direction for the blog. Items are organized by priorit
 
 - [ ] Standardize spacing units (0.5rem, 2rem, 8rem instead of 10px, 40px, 150px)
 - [ ] Remove unused CSS rules
-- [ ] Decide on naming methodology: BEM vs. tag-based
+- [x] Decide on naming methodology: BEM vs. tag-based
 - [ ] Split CSS for better code organization
 - [ ] Consider CSS reset: <https://keithjgrant.com/posts/2024/01/my-css-resets/>
 - [ ] Implement inline style injection (Tera macro)
