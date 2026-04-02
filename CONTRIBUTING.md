@@ -67,7 +67,11 @@ There is no Node.js, npm, or any JavaScript build step involved.
 ## Style guidelines
 
 - **Templates** — Use `{# #}` for comments, never `<!-- -->`. Keep whitespace trimming (`{%-`/`-%}`) consistent with surrounding code.
-- **SCSS** — Follow the BEM-like naming already in use. Use CSS custom properties from `color.scss` instead of hard-coded colour values.
+- **SCSS** — Follow the hybrid naming methodology in use:
+  - **BEM for components**: use `block__element` and `block--modifier` for component-specific classes (e.g. `.header__logo`, `.post--regulation`, `.button__text`).
+  - **Tag-based for global defaults**: use plain element selectors (`h1`, `a`, `table`, `code`, etc.) to set base typography and element resets; do not add classes to these.
+  - **`%placeholder` + `@extend`**: use SCSS placeholder selectors for shared style fragments within a component (e.g. `%meta` in `post.scss`).
+  - Use CSS custom properties from `color.scss` instead of hard-coded colour values.
 - **i18n** — Any user-visible string added to a template must have both an English and a French entry in `config.toml`.
 
 ---
