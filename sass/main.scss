@@ -81,13 +81,13 @@ img {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 figure {
   display: table;
   max-width: 100%;
-  margin: 25px 0;
+  margin: 1.5625rem 0;
 
   &.left,
   img {
@@ -106,9 +106,9 @@ figure {
   }
 
   figcaption {
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-top: 5px;
+    font-size: 0.875rem;
+    padding: 0.3125rem 0.625rem;
+    margin-top: 0.3125rem;
     background: var(--primary);
     color: var(--background);
 
@@ -129,8 +129,8 @@ figure {
 code {
   font-family: monospace;
   font-feature-settings: normal;
-  padding: 1px 6px;
-  margin: 0 2px;
+  padding: 0.0625rem 0.375rem;
+  margin: 0 0.125rem;
   font-size: .95rem;
 }
 
@@ -169,7 +169,7 @@ pre table {
 
 pre {
   font-family: monospace;
-  padding: 20px;
+  padding: 1.25rem;
   font-size: .95rem;
   overflow: auto;
   border-top: 1px solid rgba(255, 255, 255, .1);
@@ -190,8 +190,8 @@ pre {
 blockquote {
   border-top: 1px solid var(--primary);
   border-bottom: 1px solid var(--primary);
-  margin: 40px 0;
-  padding: 25px;
+  margin: 2.5rem 0;
+  padding: 1.5625rem;
 
   @media (max-width: $phone-max-width) {
     padding-right: 0;
@@ -202,8 +202,8 @@ blockquote {
     font-family: Georgia, serif;
     font-size: 3.875rem;
     position: absolute;
-    left: -40px;
-    top: -20px;
+    left: -2.5rem;
+    top: -1.25rem;
   }
 
   p:first-of-type {
@@ -222,7 +222,7 @@ blockquote {
     content: '>';
     display: block;
     position: absolute;
-    left: -25px;
+    left: -1.5625rem;
     color: var(--primary);
   }
 }
@@ -231,14 +231,14 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
-  margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 table,
 th,
 td {
   border: 1px dashed var(--primary);
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 th {
@@ -247,7 +247,7 @@ th {
 
 ul,
 ol {
-  margin-left: 30px;
+  margin-left: 1.875rem;
   padding: 0;
 
   li {
@@ -255,7 +255,7 @@ ol {
   }
 
   @media (max-width: $phone-max-width) {
-    margin-left: 20px;
+    margin-left: 1.25rem;
   }
 }
 
@@ -291,13 +291,13 @@ ol ol {
 }
 
 .container {
-  padding: 40px;
-  max-width: 864px;
+  padding: 2.5rem;
+  max-width: 54rem;
   min-height: 100vh;
   margin: 0 auto;
 
   @media (max-width: $phone-max-width) {
-    padding: 20px;
+    padding: 1.25rem;
   }
 }
 
@@ -372,11 +372,11 @@ hr {
 
 .spotify {
   width: 100%;
-  height: 232px;
+  height: 14.5rem;
   border-radius: 1rem;
 
   @media (max-width: $phone-max-width) {
-    height: 352px;
+    height: 22rem;
   }
 }
 

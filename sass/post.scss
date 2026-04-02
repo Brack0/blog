@@ -8,11 +8,11 @@
 .post {
   width: 100%;
   text-align: left;
-  margin: 20px auto;
-  padding: 20px 0;
+  margin: 1.25rem auto;
+  padding: 1.25rem 0;
 
   @media (max-width: $tablet-max-width) {
-    max-width: 660px;
+    max-width: 41.25rem;
   }
 
   &:not(:last-of-type) {
@@ -21,7 +21,7 @@
 
   %meta {
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     color: var(--primary);
   }
 
@@ -39,8 +39,8 @@
     --border: 2px dashed var(--primary);
     position: relative;
     color: var(--primary);
-    margin: 0 0 15px;
-    padding-bottom: 15px;
+    margin: 0 0 0.9375rem;
+    padding-bottom: 0.9375rem;
     border-bottom: var(--border);
     font-weight: normal;
 
@@ -50,7 +50,7 @@
   }
 
   %tags {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-size: 1rem;
     opacity: .65;
   }
@@ -68,18 +68,18 @@
   }
 
   &-content {
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
 
   &-cover {
-    border: 20px solid var(--primary);
+    border: 1.25rem solid var(--primary);
     background: transparent;
-    margin: 40px 0;
-    padding: 20px;
+    margin: 2.5rem 0;
+    padding: 1.25rem;
 
     @media (max-width: $phone-max-width) {
-      padding: 10px;
-      border-width: 10px;
+      padding: 0.625rem;
+      border-width: 0.625rem;
     }
   }
 
@@ -89,7 +89,7 @@
     li:before {
       content: '►';
       position: absolute;
-      left: -20px;
+      left: -1.25rem;
       color: var(--primary);
     }
   }
@@ -102,11 +102,11 @@
 
   h2 {
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 
     &+ h2 {
-      margin-top: -10px;
-      margin-bottom: 20px;
+      margin-top: -0.625rem;
+      margin-bottom: 1.25rem;
     }
   }
 }
